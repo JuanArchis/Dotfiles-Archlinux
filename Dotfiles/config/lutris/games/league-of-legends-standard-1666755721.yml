@@ -1,0 +1,101 @@
+game:
+  args: --locale=$INPUT_LOCALE --launch-product=league_of_legends --launch-patchline=live
+  exe: /home/juan-c/Games/league-of-legends/drive_c/Riot Games/Riot Client/RiotClientServices.exe
+  prefix: /home/juan-c/Games/league-of-legends
+game_slug: league-of-legends
+name: League of Legends
+requires: null
+script:
+  files:
+  - lol_installer: https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.na.exe
+  game:
+    args: --locale=$INPUT_LOCALE --launch-product=league_of_legends --launch-patchline=live
+    exe: $GAMEDIR/drive_c/Riot Games/Riot Client/RiotClientServices.exe
+    prefix: $GAMEDIR
+  installer:
+  - input_menu:
+      description: 'Choose your preferred game''s language:'
+      id: LOCALE
+      options:
+      - cs_CZ: "\u010Ce\u0161tina"
+      - en_AU: English AUS
+      - en_GB: English U.K.
+      - en_US: English U.S.
+      - fr_FR: "Fran\xE7ais"
+      - de_DE: Deutsch
+      - es_ES: "Espa\xF1ol"
+      - es_MX: "Espa\xF1ol Mexicano"
+      - it_IT: Italiano
+      - ja_JP: "\u65E5\u672C\u8A9E"
+      - hu_HU: Magyar
+      - pl_PL: Polski
+      - pt_BR: "Portugu\xEAs do Brasil"
+      - ro_RO: Romanian
+      - ru_RU: "\u0440\u0443\u0441\u0441\u043A\u0438\u0439"
+      - tr_TR: "T\xFCrk\xE7e"
+      preselect: en_US
+  - task:
+      description: Creating Wine prefix
+      name: create_prefix
+      prefix: $GAMEDIR
+  - task:
+      args: $lol_installer
+      description: Do not log in during installation, just close the installation
+        client once it finishes downloading.
+      executable: $GAMEDIR/drive_c/windows/explorer.exe
+      include_processes: explorer.exe
+      name: wineexec
+  - task:
+      name: winekill
+      prefix: $GAMEDIR
+  - task:
+      key: GrabFullScreen
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine\X11 Driver
+      prefix: $GAMEDIR
+      value: Y
+  - task:
+      key: background
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Control Panel\Colors\
+      prefix: $GAMEDIR
+      type: REG_SZ
+      value: 40 40 40
+  system:
+    env:
+      DXVK_LOG_LEVEL: none
+      DXVK_STATE_CACHE_PATH: $GAMEDIR
+      STAGING_SHARED_MEMORY: 1
+      WINE_LARGE_ADDRESS_AWARE: 1
+      __GL_SHADER_DISK_CACHE: 1
+      __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
+  wine:
+    MouseWarpOverride: enable
+    version: lutris-ge-lol-7.0-5-x86_64
+slug: league-of-legends-standard
+system:
+  disable_runtime: true
+  env:
+    DXVK_HUD: '1'
+    DXVK_LOG_LEVEL: none
+    DXVK_STATE_CACHE_PATH: /home/juan-c/Games/league-of-legends
+    PBA_Disbale: '0'
+    STAGING_SHARED_MEMORY: '1'
+    WINE_LARGE_ADDRESS_AWARE: '1'
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /home/juan-c/Games/league-of-legends
+    __GL_THREADED_OPTIMIZATIONS: '1'
+    mesa_glthread: 'true'
+    pulse_latency: 'true'
+variables: {}
+version: Standard
+wine:
+  MouseWarpOverride: enable
+  battleye: false
+  dgvoodoo2: true
+  dxvk: true
+  eac: false
+  fsr: true
+  version: lutris-ge-lol-7.0-5-x86_64
+  vkd3d: true
+year: 2009

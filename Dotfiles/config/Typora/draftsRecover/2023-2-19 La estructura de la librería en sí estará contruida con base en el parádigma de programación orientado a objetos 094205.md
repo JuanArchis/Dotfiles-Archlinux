@@ -1,0 +1,1 @@
+La estructura de la librería en sí estará contruida con base en el parádigma de programación orientado a objetos. 

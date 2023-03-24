@@ -1,0 +1,48 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[r]": {},
+    "r.lsp.lang": "UTF-8",
+    "json.schemas": [
+
+    "workbench.colorCustomizations": {
+            "editor.background": "#121c21",
+            "debugCOnsole.background": "#121c21",
+            "terminal.background": "#121c21",
+            "sideBar.background": "#121c21",
+            "editorInfo.background": "#121c21",
+            "panel.background": "#121c21",
+            "selection.background": "#121c21",
+            "button.background": "#121c21",
+            "input.background": "#121c21",
+            "statusBar.background": "#121c21",
+            "tab.activeBackground": "#121c21",
+            "tab.hoverBackground": "#121c21",
+            "tab.inactiveBackground": "#121c21",
+            "sideBarSectionHeader.background": "#121c21",
+            "sideBar.dropBackground": "#121c21",
+            "activityBar.background": "#121c21",
+            "terminal.foreground": "#c4c4c4",
+            "titleBar.activeBackground": "#121c21",
+            "editorGroupHeader.tabsBackground": "#121c21"
+        },
+         
+
+
+    ],
+    "r.lsp.debug": true,
+    "r.removeLeadingComments": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 0,
+    "r.helpPanel.enableHoverLinks": false,
+    "r.helpPanel.enableSyntaxHighlighting": false,
+    "r.liveShare.timeout": 0,
+    "r.lsp.promptToInstall": false,
+    "r.lsp.diagnostics": false,
+    "editor.quickSuggestionsDelay": 0,
+    "workbench.colorTheme": "Everforest Dark"
+}

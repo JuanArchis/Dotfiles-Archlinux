@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[r]": {},
+    "r.alwaysUseActiveTerminal": true,
+    "r.lsp.lang": "UTF-8",
+    "json.schemas": [
+
+    ],
+    "r.lsp.debug": true,
+    "r.lsp.use_stdio": true,
+    "r.removeLeadingComments": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 0
+}

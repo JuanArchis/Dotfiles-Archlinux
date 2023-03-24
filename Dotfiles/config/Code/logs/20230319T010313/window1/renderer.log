@@ -1,0 +1,3 @@
+2023-03-19 01:03:32.817 [error] RequestService#request (browser) - error https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery {}
+2023-03-19 01:03:33.248 [info] [perf] Render performance baseline is 47ms
+2023-03-19 01:03:43.121 [error] RequestService#request (browser) - error https://vscodeexperiments.azureedge.net/experiments/vscode-experiments.json {}

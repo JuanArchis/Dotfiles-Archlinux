@@ -1,0 +1,15 @@
+2023-03-19 13:45:43.914 [info] Extension host with pid 47596 started
+2023-03-19 13:45:43.914 [info] Skipping acquiring lock for /home/juan-c/.config/Code/User/workspaceStorage/f9f947929671050f7760a2b02869e289.
+2023-03-19 13:45:44.065 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-19 13:45:44.073 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-19 13:45:44.166 [info] ExtensionService#_doActivateExtension REditorSupport.r, startup: true, activationEvent: 'workspaceContains:**/*.{rproj,Rproj,r,R,rd,Rd,rmd,Rmd}'
+2023-03-19 13:45:45.067 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-03-19 13:45:45.237 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-19 13:45:45.238 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-19 13:45:46.697 [info] Eager extensions activated
+2023-03-19 13:45:46.702 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-03-19 13:45:46.791 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 13:45:46.792 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 13:45:46.796 [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 13:45:51.811 [info] Extension host terminating: renderer closed the MessagePort
+2023-03-19 13:45:51.845 [info] Extension host with pid 47596 exiting with code 0

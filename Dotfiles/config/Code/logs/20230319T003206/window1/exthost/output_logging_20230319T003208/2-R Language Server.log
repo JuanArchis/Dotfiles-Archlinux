@@ -1,0 +1,2472 @@
+R Language Server (16597) started
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+
+[2023-03-19 00:32:17.723] connection type: tcp at  37917
+
+[2023-03-19 00:32:17.729] connected
+
+[2023-03-19 00:32:17.906] received:  Content-Length: 5827
+
+[2023-03-19 00:32:18.234] received payload.
+
+[2023-03-19 00:32:18.234] handling request:  initialize
+
+[2023-03-19 00:32:18.234] session:  {
+  "system": {
+    "sysname": "Linux",
+    "release": "6.2.6-arch1-1",
+    "version": "#1 S
+MP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000",
+    "nodename": "Arcris",
+    "machine": "x86_64",
+    "login": "juan-c",
+ 
+   "user": "juan-c",
+    "effective_user": "juan-c"
+  },
+  "pid": 16597,
+  "wd": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+  
+"args": ["/usr/lib64/R/bin/exec/R", "--silent", "--slave", "--no-save", "--no-restore", "-e", "base::source(base::commandArgs(TR
+UE))", "--args", "/home/juan-c/.vscode/extensions/reditorsupport.r-2.7.2/R/languageServer.R"],
+  "ver": {
+    "platform": "x86_6
+4-pc-linux-gnu",
+    "arch": "x86_64",
+    "os": "linux-gnu",
+    "system": "x86_64, linux-gnu",
+    "status": "",
+    "major": 
+"4",
+    "minor": "2.3",
+    "year": "2023",
+    "month": "03",
+    "day": "15",
+    "svn rev": "83980",
+    "language": "R",
+  
+  "version.string": "R version 4.2.3 (2023-03-15)",
+    "nickname": "Shortstop Beagle"
+  },
+  "locale": "C",
+  "env": {
+    "CHR
+OME_DESKTOP": "code-url-handler.desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "DEBUGINFOD_URLS":
+ "https://debuginfod.archlinux.org ",
+    "DESKTOP_SESSION": "hyprland",
+    "DISPLAY": ":1",
+    "DOTNET_BUNDLE_EXTRACT_BASE_DI
+R": "/home/juan-c/.cache/dotnet_bundle_extract",
+    "DOTNET_ROOT": "/usr/share/dotnet",
+    "EDITOR": "vi",
+    "ELECTRON_NO_AT
+TACH_CONSOLE": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "GDK_BACKEND": "x11",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/appl
+ications/code.desktop",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "16289",
+    "HOME": "/home/juan-c",
+    "HYPRLAND_CMD": "Hyprland"
+,
+    "HYPRLAND_INSTANCE_SIGNATURE": "06244555915339967864292dd0b83cd9732516d8_1679202940",
+    "LANG": "UTF-8",
+    "LD_LIBRARY
+_PATH": "/usr/lib64/R/lib:/usr/lib/jvm/java-19-openjdk/lib/server",
+    "LN_S": "ln -s",
+    "LOGNAME": "juan-c",
+    "MAIL": "/
+var/spool/mail/juan-c",
+    "MAKE": "make",
+    "MOTD_SHOWN": "pam",
+    "MOZ_ENABLE_WAYLAND": "1",
+    "NO_AT_BRIDGE": "1",
+   
+ "OLDPWD": "/home/juan-c",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Hyprland",
+    "PAGER": "/usr/bin/less",
+    "PATH": "/usr/local
+/sbin:/usr/local/bin:/usr/bin:/home/juan-c/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/b
+in/core_perl:/var/lib/snapd/snap/bin",
+    "PWD": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+    "R_ARCH": "",
+    "R_BROWSER"
+: "",
+    "R_BZIPCMD": "/usr/bin/bzip2",
+    "R_DOC_DIR": "/usr/share/doc/R/",
+    "R_GZIPCMD": "/usr/bin/gzip",
+    "R_HOME": "
+/usr/lib64/R",
+    "R_INCLUDE_DIR": "/usr/include/R/",
+    "R_LIBS_SITE": "/usr/lib64/R/site-library",
+    "R_LIBS_USER": "/home
+/juan-c/R/x86_64-pc-linux-gnu-library/4.2",
+    "R_PAPERSIZE": "A4",
+    "R_PDFVIEWER": "",
+    "R_PLATFORM": "x86_64-pc-linux-g
+nu",
+    "R_PRINTCMD": "",
+    "R_RD4PDF": "times,hyper",
+    "R_SESSION_TMPDIR": "/tmp/RtmpSGEZSt",
+    "R_SHARE_DIR": "/usr/sh
+are/R/",
+    "R_STRIP_SHARED_LIB": "strip --strip-unneeded",
+    "R_STRIP_STATIC_LIB": "strip --strip-debug",
+    "R_SYSTEM_ABI"
+: "linux,gcc,gxx,gfortran,gfortran",
+    "R_TEXI2DVICMD": "/usr/bin/texi2dvi",
+    "R_UNZIPCMD": "/usr/bin/unzip",
+    "R_ZIPCMD
+": "/usr/bin/zip",
+    "SED": "/usr/bin/sed",
+    "SHELL": "/bin/zsh",
+    "SHLVL": "1",
+    "TAR": "/usr/bin/tar",
+    "USER": 
+"juan-c",
+    "VSCODE_AMD_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_CLI": "1",
+    "VSCODE_CODE_CAC
+HE_PATH": "/home/juan-c/.config/Code/CachedData/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884",
+    "VSCODE_CRASH_REPORTER_PROCESS_TY
+PE": "extensionHost",
+    "VSCODE_CWD": "/home/juan-c",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "/r
+un/user/1000/vscode-1da64c1e-1.76-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"es-co\",\"availableLanguages\":{\"*\":\"es
+\"},\"_languagePackId\":\"ac912362dff4707224d25c1495fac2dc.es\",\"_translationsConfigFile\":\"/home/juan-c/.config/Code/clp/ac91
+2362dff4707224d25c1495fac2dc.es/tcf.json\",\"_cacheRoot\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es\",
+\"_corruptedFile\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es/corrupted.info\",\"_resolvedLanguagePackC
+oreLocation\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884\",\"_
+languagePackSupport\":true}",
+    "VSCODE_PID": "16312",
+    "VSCR_LIB_PATHS": "",
+    "VSCR_LSP_DEBUG": "TRUE",
+    "VSCR_LSP_P
+ORT": "37917",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "XCURSOR_SIZE": "24",
+    "XDG_BACKEND": "wayland",
+    "XDG_CURRENT_DESK
+TOP": "Hyprland",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "XDG_RUNTIME_DIR": "/run/user/1
+000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_CLASS": "user",
+  
+  "XDG_SESSION_ID": "9",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session7",
+    "XDG_SESSION_TYPE": "wayland",
+
+    "XDG_VTNR": "3",
+    "_JAVA_AWT_WM_NONREPARENTING": "1"
+  },
+  "libpaths": ["/home/juan-c/R/x86_64-pc-linux-gnu-library/4.2"
+, "/usr/lib/R/library"],
+  "namespaces": {
+    "processx": "3.8.0",
+    "compiler": "4.2.3",
+    "R6": "2.5.1",
+    "graphics": 
+"4.2.3",
+    "tools": "4.2.3",
+    "parallel": "4.2.3",
+    "collections": "0.3.7",
+    "utils": "4.2.3",
+    "grDevices": "4.2.
+3",
+    "stats": "4.2.3",
+    "datasets": "4.2.3",
+    "xml2": "1.3.3",
+    "stringi": "1.7.12",
+    "callr": "3.7.3",
+    "meth
+ods": "4.2.3",
+    "jsonlite": "1.8.4",
+    "ps": "1.7.2",
+    "base": "4.2.3",
+    "languageserver": "0.3.15"
+  },
+  "search": 
+[".GlobalEnv", "package:stats", "package:graphics", "package:grDevices", "package:utils", "package:datasets", "package:methods",
+ "Autoloads", "package:base"]
+}
+
+[2023-03-19 00:32:18.286] initialization config:  {
+  "processId": 16454,
+  "clientInfo": {
+    "name": "Visual Studio Code",
+  
+  "version": "1.76.2"
+  },
+  "locale": "es",
+  "rootPath": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+  "rootUri": "file:///ho
+me/juan-c/WIM-PC-2022/Otro/Visual%20Code",
+  "capabilities": {
+    "workspace": {
+      "applyEdit": true,
+      "workspaceEdit"
+: {
+        "documentChanges": true,
+        "resourceOperations": [
+          "create",
+          "rename",
+          "delete"
+
+        ],
+        "failureHandling": "textOnlyTransactional",
+        "normalizesLineEndings": true,
+        "changeAnnotationS
+upport": {
+          "groupsOnLabel": true
+        }
+      },
+      "configuration": true,
+      "didChangeWatchedFiles": {
+    
+    "dynamicRegistration": true,
+        "relativePatternSupport": true
+      },
+      "symbol": {
+        "dynamicRegistration"
+: true,
+        "symbolKind": {
+          "valueSet": [
+            1,
+            2,
+            3,
+            4,
+            
+5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+ 
+           14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+ 
+           22,
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        "tagSupport": {
+   
+       "valueSet": [
+            1
+          ]
+        },
+        "resolveSupport": {
+          "properties": [
+            "loc
+ation.range"
+          ]
+        }
+      },
+      "codeLens": {
+        "refreshSupport": true
+      },
+      "executeCommand": {
+        "dynamicRegistration": true
+      },
+      "didChangeConfiguration": {
+        "dynamicRegistration": true
+      },
+      "semanticTokens": {
+        "refreshSupport": true
+      },
+      "fileOperations": {
+        "dynamicRegistration": true,
+        "didCreate": true,
+        "didRename": true,
+        "didDelete": true,
+        "willCreate": true,
+        "willRename": true,
+        "willDelete": true
+      },
+      "inlineValue": {
+        "refreshSupport": true
+      },
+      "inlayHint": {
+        "refreshSupport": true
+      },
+      "diagnostics": {
+        "refreshSupport": true
+      }
+    },
+    "textDocument": {
+      "publishDiagnostics": {
+        "relatedInformation": true,
+        "versionSupport": false,
+        "tagSupport": {
+          "valueSet": [
+            1,
+            2
+          ]
+        },
+        "codeDescriptionSupport": true,
+        "dataSupport": true
+      },
+      "synchronization": {
+        "dynamicRegistration": true,
+        "willSave": true,
+        "willSaveWaitUntil": true,
+        "didSave": true
+      },
+      "completion": {
+        "dynamicRegistration": true,
+        "contextSupport": true,
+        "completionItem": {
+          "snippetSupport": true,
+          "commitCharactersSupport": true,
+          "documentationFormat": [
+            "markdown",
+            "plaintext"
+          ],
+          "deprecatedSupport": true,
+          "preselectSupport": true,
+          "tagSupport": {
+            "valueSet": [
+              1
+            ]
+          },
+          "insertReplaceSupport": true,
+          "resolveSupport": {
+            "properties": [
+              "documentation",
+              "detail",
+              "additionalTextEdits"
+            ]
+          },
+          "insertTextModeSupport": {
+            "valueSet": [
+              1,
+              2
+            ]
+          },
+          "labelDetailsSupport": true
+        },
+        "insertTextMode": 2,
+        "completionItemKind": {
+          "valueSet": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        },
+        "completionList": {
+          "itemDefaults": [
+            "commitCharacters",
+            "editRange",
+            "insertTextFormat",
+            "insertTextMode"
+          ]
+        }
+      },
+      "hover": {
+        "dynamicRegistration": true,
+        "contentFormat": [
+          "markdown",
+          "plaintext"
+        ]
+      },
+      "signatureHelp": {
+        "dynamicRegistration": true,
+        "signatureInformation": {
+          "documentationFormat": [
+            "markdown",
+            "plaintext"
+          ],
+          "parameterInformation": {
+            "labelOffsetSupport": true
+          },
+          "activeParameterSupport": true
+        },
+        "contextSupport": true
+      },
+      "definition": {
+        "dynamicRegistration": true,
+        "linkSupport": true
+      },
+      "references": {
+        "dynamicRegistration": true
+      },
+      "documentHighlight": {
+        "dynamicRegistration": true
+      },
+      "documentSymbol": {
+        "dynamicRegistration": true,
+        "symbolKind": {
+          "valueSet": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+  
+          7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        "hierarchicalDocumentSymbolSupport": true,
+        "tagSupport": {
+          "valueSet": [
+            1
+          ]
+        },
+        "labelSupport": true
+      },
+      "codeAction": {
+        "dynamicRegistration": true,
+        "isPreferredSupport": true,
+        "disabledSupport": true,
+        "dataSupport": true,
+        "resolveSupport": {
+          "properties": [
+            "edit"
+          ]
+        },
+        "codeActionLiteralSupport": {
+          "codeActionKind": {
+            "valueSet": [
+              "",
+              "quickfix",
+              "refactor",
+              "refactor.extract",
+              "refactor.inline",
+              "refactor.rewrite",
+              "source",
+              "source.organizeImports"
+            ]
+          }
+        },
+        "honorsChangeAnnotations": false
+      },
+      "codeLens": {
+        "dynamicRegistration": true
+      },
+      "formatting": {
+        "dynamicRegistration": true
+      },
+      "rangeFormatting": {
+        "dynamicRegistration": true
+      },
+      "onTypeFormatting": {
+        "dynamicRegistration": true
+      },
+      "rename": {
+        "dynamicRegistration": true,
+        "prepareSupport": true,
+        "prepareSupportDefaultBehavior": 1,
+        "honorsChangeAnnotations": true
+      },
+      "documentLink": {
+        "dynamicRegistration": true,
+        "tooltipSupport": true
+      },
+      "typeDefinition": {
+        "dynamicRegistration": true,
+        "linkSupport": true
+      },
+      "implementation": {
+        "dynamicRegistration": true,
+        "linkSupport": true
+      },
+      "colorProvider": {
+        "dynamicRegistration": true
+      },
+      "foldingRange": {
+        "dynamicRegistration": true,
+        "rangeLimit": 5000,
+        "lineFoldingOnly": true,
+        "foldingRangeKind": {
+          "valueSet": [
+            "comment",
+            "imports",
+            "region"
+          ]
+        },
+        "foldingRange": {
+          "collapsedText": false
+        }
+      },
+      "declaration": {
+        "dynamicRegistration": true,
+        "linkSupport": true
+      },
+      "selectionRange": {
+        "dynamicRegistration": true
+      },
+      "callHierarchy": {
+        "dynamicRegistration": true
+      },
+      "semanticTokens": {
+        "dynamicRegistration": true,
+        "tokenTypes": [
+          "namespace",
+          "type",
+          "class",
+          "enum",
+          "interface",
+          "struct",
+          "typeParameter",
+          "parameter",
+          "variable",
+          "property",
+          "enumMember",
+          "event",
+          "function",
+          "method",
+          "macro",
+          "keyword",
+          "modifier",
+          "comment",
+          "string",
+          "number",
+          "regexp",
+          "operator",
+          "decorator"
+        ],
+        "tokenModifiers": [
+          "declaration",
+          "definition",
+          "readonly",
+          "static",
+          "deprecated",
+          "abstract",
+          "async",
+          "modification",
+          "documentation",
+          "defaultLibrary"
+        ],
+        "formats": [
+          "relative"
+        ],
+        "requests": {
+          "range": true,
+          "full": {
+            "delta": true
+          }
+        },
+        "multilineTokenSupport": false,
+        "overlappingTokenSupport": false,
+        "serverCancelSupport": true,
+        "augmentsSyntaxTokens": true
+      },
+      "linkedEditingRange": {
+        "dynamicRegistration": true
+      },
+      "typeHierarchy": {
+        "dynamicRegistration": true
+      },
+      "inlineValue": {
+        "dynamicRegistration": true
+      },
+      "inlayHint": {
+        "dynamicRegistration": true,
+        "resolveSupport": {
+          "properties": [
+            "tooltip",
+            "textEdits",
+            "label.tooltip",
+            "label.location",
+            "label.command"
+          ]
+        }
+      },
+      "diagnostic": {
+        "dynamicRegistration": true,
+        "relatedDocumentSupport": false
+      }
+    },
+    "window": {
+      "showMessage": {
+        "messageActionItem": {
+          "additionalPropertiesSupport": true
+        }
+      },
+      "showDocument": {
+        "support": true
+      },
+      "workDoneProgress": true
+    },
+    "general": {
+      "staleRequestSupport": {
+        "cancel": true,
+        "retryOnContentModified": [
+          "textDocument/semanticTokens/full",
+          "textDocument/semanticTokens/range",
+          "textDocument/semanticTokens/full/delta"
+        ]
+      },
+      "regularExpressions": {
+        "engine": "ECMAScript",
+        "version": "ES2020"
+      },
+      "markdown": {
+        "parser": "marked",
+        "version": "1.1.0"
+      },
+      "positionEncodings": [
+        "utf-16"
+      ]
+    },
+    "notebookDocument": {
+      "synchronization": {
+        "dynamicRegistration": true,
+        "executionSummarySupport": true
+      }
+    }
+  },
+  "trace": "off",
+  "workspaceFolders": [
+    {
+      "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code",
+      "name": "Visual Code"
+    }
+  ]
+}
+
+[2023-03-19 00:32:19.336] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:19.604] received:  Content-Length: 52
+
+[2023-03-19 00:32:19.623] received payload.
+[2023-03-19 00:32:19.624] handling notification:  initialized
+
+[2023-03-19 00:32:19.624] on_initialized
+
+[2023-03-19 00:32:19.624] received:  Content-Length: 1750
+
+[2023-03-19 00:32:19.635] received payload.
+[2023-03-19 00:32:19.636] handling notification:  textDocument/didOpen
+
+[2023-03-19 00:32:19.636] did open: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 1
+}
+
+[2023-03-19 00:32:19.787] diagnostics session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:19.788] diagnostics session ready 1 2023-03-19 00:32:19
+
+[2023-03-19 00:32:19.791] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:19.792] parse session ready 1 2023-03-19 00:32:19
+
+[2023-03-19 00:32:19.794] received:  Content-Length: 214
+
+[2023-03-19 00:32:19.804] received payload.
+
+[2023-03-19 00:32:19.805] handling notification:  workspace/didChangeConfiguration
+
+[2023-03-19 00:32:19.805] settings  {
+  "enabled": true,
+  "args": [],
+  "promptToInstall": false,
+  "debug": true,
+  "diagnostics": false,
+  "lang": "UTF-8",
+  "use_stdio": false
+}
+
+[2023-03-19 00:32:19.829] received:  Content-Length: 212
+
+[2023-03-19 00:32:19.840] received payload.
+
+[2023-03-19 00:32:19.841] handling request:  textDocument/documentSymbol
+
+[2023-03-19 00:32:19.842] received:  Content-Length: 211
+
+[2023-03-19 00:32:19.853] received payload.
+
+[2023-03-19 00:32:19.853] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:19.855] received:  Content-Length: 210
+
+[2023-03-19 00:32:19.866] received payload.
+
+[2023-03-19 00:32:19.866] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:19.868] received:  Content-Length: 210
+
+[2023-03-19 00:32:19.879] received payload.
+
+[2023-03-19 00:32:19.879] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:19.985] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:19.986] parse task timing: 0.200183629989624   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:20.902] diagnostics session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:20.903] diagnostics_task: <callr_error/rlib_error_3_0/rlib_error/error>
+Error: 
+! in callr subprocess.
+Caused by error in `dirname(filename)`:
+! unable to translate '/home/juan-c/WIM-PC-2022/Otro/Visual Code/Trabajos/An<U+00E1>lisis de encuesta de percepci<U+00F3>n' to native encoding
+---
+Subprocess backtrace:
+1. languageserver:::diagnose_file(...)
+2. lintr::lint(path, cache = cache, text = content)
+3. lintr:::read_settings(filename)
+4. lintr:::find_config(filename)
+5. base::dirname(filename)
+6. base::.handleSimpleError(function (e)
+7. global h(simpleError(msg, call))
+
+[2023-03-19 00:32:20.930] diagnostics task timing: 1.14442825317383   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:21.033] received:  Content-Length: 253
+
+[2023-03-19 00:32:21.045] received payload.
+
+[2023-03-19 00:32:21.046] handling request:  textDocument/documentHighlight
+
+[2023-03-19 00:32:21.063] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:21.368] received:  Content-Length: 331
+
+[2023-03-19 00:32:21.380] received payload.
+
+[2023-03-19 00:32:21.380] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:21.381] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 34,
+      "character": 31
+    },
+    "end": {
+      "line": 34,
+      "character": 31
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:21.386] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 34,
+      "col": 31
+    },
+    "end": {
+      "row": 34,
+      "col": 31
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:21.390] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:22.301] received:  Content-Length: 62
+
+[2023-03-19 00:32:22.312] received payload.
+
+[2023-03-19 00:32:22.313] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:22.313] received:  Content-Length: 1764
+
+[2023-03-19 00:32:22.325] received payload.
+
+[2023-03-19 00:32:22.325] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:22.325] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 3
+}
+
+[2023-03-19 00:32:22.328] received:  Content-Length: 1729
+
+[2023-03-19 00:32:22.340] received payload.
+
+[2023-03-19 00:32:22.340] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:22.341] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:22.344] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:22.346] parse session ready 2 2023-03-19 00:32:22
+
+[2023-03-19 00:32:22.453] received:  Content-Length: 1729
+
+[2023-03-19 00:32:22.465] received payload.
+
+[2023-03-19 00:32:22.465] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:22.466] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:22.469] parse session acquired session_id = 1 remain pool size = 0
+
+[2023-03-19 00:32:22.470] parse session kill 2
+
+[2023-03-19 00:32:22.470] parse session restart 2
+
+[2023-03-19 00:32:22.504] parse session released session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:22.510] received:  Content-Length: 210
+
+[2023-03-19 00:32:22.522] received payload.
+
+[2023-03-19 00:32:22.522] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:22.627] parse session released session_id = 1 remain pool size = 2
+[2023-03-19 00:32:22.627] parse task timing: 0.159125804901123   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:22.729] received:  Content-Length: 62
+
+[2023-03-19 00:32:22.740] received payload.
+
+[2023-03-19 00:32:22.740] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:22.841] received:  Content-Length: 1765
+
+[2023-03-19 00:32:22.852] received payload.
+
+[2023-03-19 00:32:22.853] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:22.853] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 4
+}
+
+[2023-03-19 00:32:22.855] received:  Content-Length: 273
+
+[2023-03-19 00:32:22.866] received payload.
+[2023-03-19 00:32:22.866] handling request:  textDocument/completion
+
+[2023-03-19 00:32:22.868] token: {
+  "full_token": "D",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "D"
+}
+
+[2023-03-19 00:32:22.903] bracket is  
+
+[2023-03-19 00:32:22.909] completions:  {
+  "init_count": 838,
+  "final_count": 200,
+  "time": 0.0416,
+  "isIncomplete": true
+}
+
+[2023-03-19 00:32:22.912] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.065] received:  Content-Length: 1730
+
+[2023-03-19 00:32:23.076] received payload.
+
+[2023-03-19 00:32:23.076] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:23.076] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:23.078] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:23.079] parse session ready 2 2023-03-19 00:32:23
+
+[2023-03-19 00:32:23.081] received:  Content-Length: 210
+
+[2023-03-19 00:32:23.091] received payload.
+
+[2023-03-19 00:32:23.092] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:23.093] received:  Content-Length: 330
+
+[2023-03-19 00:32:23.104] received payload.
+
+[2023-03-19 00:32:23.104] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:23.105] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 1
+    },
+    "end": {
+      "line": 36,
+      "character": 1
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:23.107] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 1
+    },
+    "end": {
+      "row": 36,
+      "col": 1
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:23.110] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.215] parse session released session_id = 2 remain pool size = 2
+[2023-03-19 00:32:23.215] parse task timing: 0.138060569763184   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:23.216] received:  Content-Length: 214
+
+[2023-03-19 00:32:23.227] received payload.
+[2023-03-19 00:32:23.228] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:23.357] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.362] received:  Content-Length: 62
+[2023-03-19 00:32:23.373] received payload.
+[2023-03-19 00:32:23.374] unknown notification:  $/cancelRequest
+[2023-03-19 00:32:23.375] received:  Content-Length: 1766
+[2023-03-19 00:32:23.386] received payload.
+[2023-03-19 00:32:23.387] handling notification:  textDocument/didChange
+[2023-03-19 00:32:23.387] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 5
+}
+
+[2023-03-19 00:32:23.391] received:  Content-Length: 274
+
+[2023-03-19 00:32:23.403] received payload.
+
+[2023-03-19 00:32:23.403] handling request:  textDocument/completion
+
+[2023-03-19 00:32:23.443] token: {
+  "full_token": "Da",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "Da"
+}
+
+[2023-03-19 00:32:23.483] bracket is  
+
+[2023-03-19 00:32:23.484] completions:  {
+  "init_count": 139,
+  "final_count": 139,
+  "time": 0.079,
+  "isIncomplete": false
+}
+
+[2023-03-19 00:32:23.485] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.574] received:  Content-Length: 212
+
+[2023-03-19 00:32:23.585] received payload.
+[2023-03-19 00:32:23.585] handling request:  textDocument/documentColor
+[2023-03-19 00:32:23.586] received:  Content-Length: 1731
+
+[2023-03-19 00:32:23.597] received payload.
+[2023-03-19 00:32:23.598] handling notification:  textDocument/didSave
+[2023-03-19 00:32:23.598] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+[2023-03-19 00:32:23.600] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:23.604] received:  Content-Length: 211
+
+[2023-03-19 00:32:23.615] received payload.
+
+[2023-03-19 00:32:23.616] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:23.617] received:  Content-Length: 330
+
+[2023-03-19 00:32:23.628] received payload.
+[2023-03-19 00:32:23.628] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:23.628] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 2
+    },
+    "end": {
+      "line": 36,
+      "character": 2
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:23.630] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 2
+    },
+    "end": {
+      "row": 36,
+      "col": 2
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:23.633] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.635] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:23.635] parse task timing: 0.0362801551818848   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:23.636] received:  Content-Length: 63
+
+[2023-03-19 00:32:23.647] received payload.
+
+[2023-03-19 00:32:23.647] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:23.647] received:  Content-Length: 63
+
+[2023-03-19 00:32:23.658] received payload.
+[2023-03-19 00:32:23.658] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:23.659] received:  Content-Length: 1767
+
+[2023-03-19 00:32:23.670] received payload.
+
+[2023-03-19 00:32:23.670] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:23.671] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 6
+}
+
+[2023-03-19 00:32:23.673] received:  Content-Length: 223
+
+[2023-03-19 00:32:23.684] received payload.
+
+[2023-03-19 00:32:23.684] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:23.819] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.824] received:  Content-Length: 1732
+
+[2023-03-19 00:32:23.835] received payload.
+
+[2023-03-19 00:32:23.836] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:23.836] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:23.839] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:23.844] received:  Content-Length: 63
+
+[2023-03-19 00:32:23.855] received payload.
+
+[2023-03-19 00:32:23.855] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:23.856] received:  Content-Length: 1768
+
+[2023-03-19 00:32:23.867] received payload.
+[2023-03-19 00:32:23.867] handling notification:  textDocument/didChange
+[2023-03-19 00:32:23.867] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 7
+}
+
+[2023-03-19 00:32:23.869] received:  Content-Length: 254
+
+[2023-03-19 00:32:23.880] received payload.
+
+[2023-03-19 00:32:23.880] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:23.939] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:23.942] parse session released session_id = 2 remain pool size = 2
+
+[2023-03-19 00:32:23.942] parse task timing: 0.10378623008728   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:23.942] received:  Content-Length: 1733
+
+[2023-03-19 00:32:23.953] received payload.
+[2023-03-19 00:32:23.953] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:23.954] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:23.956] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:23.958] received:  Content-Length: 63
+
+[2023-03-19 00:32:23.969] received payload.
+[2023-03-19 00:32:23.969] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:23.970] received:  Content-Length: 1769
+
+[2023-03-19 00:32:23.982] received payload.
+
+[2023-03-19 00:32:23.982] handling notification:  textDocument/didChange
+[2023-03-19 00:32:23.983] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 8
+}
+
+[2023-03-19 00:32:23.986] received:  Content-Length: 254
+
+[2023-03-19 00:32:23.997] received payload.
+
+[2023-03-19 00:32:23.997] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:24.033] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:24.037] parse session released session_id = 1 remain pool size = 2
+[2023-03-19 00:32:24.037] parse task timing: 0.0819857120513916   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+[2023-03-19 00:32:24.038] received:  Content-Length: 1734
+[2023-03-19 00:32:24.049] received payload.
+[2023-03-19 00:32:24.049] handling notification:  textDocument/didSave
+[2023-03-19 00:32:24.049] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:24.051] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:24.159] parse session released session_id = 2 remain pool size = 2
+[2023-03-19 00:32:24.160] parse task timing: 0.109606027603149   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+[2023-03-19 00:32:24.161] received:  Content-Length: 211
+
+[2023-03-19 00:32:24.173] received payload.
+
+[2023-03-19 00:32:24.173] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:24.175] received:  Content-Length: 330
+
+[2023-03-19 00:32:24.186] received payload.
+
+[2023-03-19 00:32:24.187] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:24.187] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 5
+    },
+    "end": {
+      "line": 36,
+      "character": 5
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:24.191] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 5
+    },
+    "end": {
+      "row": 36,
+      "col": 5
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:24.194] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:24.499] received:  Content-Length: 62
+
+[2023-03-19 00:32:24.510] received payload.
+
+[2023-03-19 00:32:24.510] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:24.511] received:  Content-Length: 213
+
+[2023-03-19 00:32:24.522] received payload.
+
+[2023-03-19 00:32:24.523] handling request:  textDocument/documentSymbol
+
+[2023-03-19 00:32:24.625] received:  Content-Length: 212
+
+[2023-03-19 00:32:24.637] received payload.
+
+[2023-03-19 00:32:24.637] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:24.941] received:  Content-Length: 211
+
+[2023-03-19 00:32:24.953] received payload.
+
+[2023-03-19 00:32:24.953] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:25.460] received:  Content-Length: 63
+
+[2023-03-19 00:32:25.471] received payload.
+
+[2023-03-19 00:32:25.472] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:25.573] received:  Content-Length: 1770
+
+[2023-03-19 00:32:25.585] received payload.
+
+[2023-03-19 00:32:25.586] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:25.586] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 9
+}
+
+[2023-03-19 00:32:25.590] received:  Content-Length: 1735
+
+[2023-03-19 00:32:25.601] received payload.
+
+[2023-03-19 00:32:25.602] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:25.603] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:25.606] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:25.713] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:25.714] parse task timing: 0.10887336730957   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:25.715] received:  Content-Length: 211
+
+[2023-03-19 00:32:25.726] received payload.
+
+[2023-03-19 00:32:25.727] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:25.729] received:  Content-Length: 330
+
+[2023-03-19 00:32:25.740] received payload.
+
+[2023-03-19 00:32:25.741] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:25.741] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 6
+    },
+    "end": {
+      "line": 36,
+      "character": 6
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:25.746] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 6
+    },
+    "end": {
+      "row": 36,
+      "col": 6
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:25.750] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:25.955] received:  Content-Length: 63
+
+[2023-03-19 00:32:25.967] received payload.
+
+[2023-03-19 00:32:25.967] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:25.968] received:  Content-Length: 1772
+
+[2023-03-19 00:32:25.979] received payload.
+[2023-03-19 00:32:25.980] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:25.980] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 10
+}
+
+[2023-03-19 00:32:25.983] received:  Content-Length: 274
+
+[2023-03-19 00:32:25.995] received payload.
+
+[2023-03-19 00:32:25.995] handling request:  textDocument/completion
+
+[2023-03-19 00:32:25.997] token: {
+  "full_token": "i",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "i"
+}
+
+[2023-03-19 00:32:26.020] bracket is  
+
+[2023-03-19 00:32:26.028] completions:  {
+  "init_count": 1255,
+  "final_count": 200,
+  "time": 0.0313,
+  "isIncomplete": true
+}
+
+[2023-03-19 00:32:26.030] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:26.171] received:  Content-Length: 1736
+
+[2023-03-19 00:32:26.182] received payload.
+
+[2023-03-19 00:32:26.182] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:26.182] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:26.183] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:26.186] received:  Content-Length: 1773
+
+[2023-03-19 00:32:26.197] received payload.
+
+[2023-03-19 00:32:26.197] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:26.197] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 11
+}
+
+[2023-03-19 00:32:26.199] received:  Content-Length: 1737
+
+[2023-03-19 00:32:26.210] received payload.
+
+[2023-03-19 00:32:26.210] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:26.210] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:26.211] parse session acquired session_id = 1 remain pool size = 0
+
+[2023-03-19 00:32:26.212] parse session kill 2
+
+[2023-03-19 00:32:26.212] parse session restart 2
+
+[2023-03-19 00:32:26.245] parse session released session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:26.248] received:  Content-Length: 1774
+
+[2023-03-19 00:32:26.259] received payload.
+
+[2023-03-19 00:32:26.259] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:26.260] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 12
+}
+
+[2023-03-19 00:32:26.263] received:  Content-Length: 1738
+
+[2023-03-19 00:32:26.274] received payload.
+
+[2023-03-19 00:32:26.274] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:26.275] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:26.276] parse session acquired session_id = 2 remain pool size = 0
+
+[2023-03-19 00:32:26.277] parse session kill 1
+
+[2023-03-19 00:32:26.277] parse session restart 1
+
+[2023-03-19 00:32:26.322] parse session released session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:26.324] received:  Content-Length: 274
+
+[2023-03-19 00:32:26.335] received payload.
+
+[2023-03-19 00:32:26.335] handling request:  textDocument/completion
+
+[2023-03-19 00:32:26.336] token: {
+  "full_token": "iri",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "iri"
+}
+[2023-03-19 00:32:26.343] bracket is  
+
+[2023-03-19 00:32:26.343] completions:  {
+  "init_count": 3,
+  "final_count": 3,
+  "time": 0.0072,
+  "isIncomplete": false
+}
+
+[2023-03-19 00:32:26.346] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:26.350] received:  Content-Length: 211
+
+[2023-03-19 00:32:26.361] received payload.
+
+[2023-03-19 00:32:26.362] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:26.364] received:  Content-Length: 330
+
+[2023-03-19 00:32:26.375] received payload.
+
+[2023-03-19 00:32:26.376] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:26.377] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Vis
+ual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+   
+   "character": 9
+    },
+    "end": {
+      "line": 36,
+      "character": 9
+    }
+  },
+  "context": {
+    "diagnostics": [],
+  
+  "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:26.385] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/A
+n%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 9
+    },
+    "en
+d": {
+      "row": 36,
+      "col": 9
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:26.390] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:26.393] received:  Content-Length: 205
+
+[2023-03-19 00:32:26.404] received payload.
+[2023-03-19 00:32:26.404] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:26.440] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:26.544] received:  Content-Length: 212
+
+[2023-03-19 00:32:26.555] received payload.
+
+[2023-03-19 00:32:26.555] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:26.658] parse session ready 2 2023-03-19 00:32:26
+
+[2023-03-19 00:32:26.864] parse session released session_id = 2 remain pool size = 2
+
+[2023-03-19 00:32:26.865] parse task timing: 0.588805913925171   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:26.865] received:  Content-Length: 63
+
+[2023-03-19 00:32:26.876] received payload.
+
+[2023-03-19 00:32:26.877] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:26.979] received:  Content-Length: 1775
+
+[2023-03-19 00:32:26.991] received payload.
+
+[2023-03-19 00:32:26.991] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:26.992] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 13
+}
+
+[2023-03-19 00:32:26.995] received:  Content-Length: 1739
+
+[2023-03-19 00:32:27.007] received payload.
+
+[2023-03-19 00:32:27.007] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:27.008] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:27.011] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:27.013] parse session ready 1 2023-03-19 00:32:27
+
+[2023-03-19 00:32:27.018] received:  Content-Length: 211
+
+[2023-03-19 00:32:27.029] received payload.
+
+[2023-03-19 00:32:27.029] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:27.134] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:27.134] parse task timing: 0.125187873840332   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:27.137] received:  Content-Length: 332
+
+[2023-03-19 00:32:27.148] received payload.
+
+[2023-03-19 00:32:27.148] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:27.149] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 10
+    },
+    "end": {
+      "line": 36,
+      "character": 10
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:27.152] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 10
+    },
+    "end": {
+      "row": 36,
+      "col": 10
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:27.157] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:27.564] received:  Content-Length: 63
+
+[2023-03-19 00:32:27.575] received payload.
+
+[2023-03-19 00:32:27.575] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:27.777] received:  Content-Length: 1779
+
+[2023-03-19 00:32:27.788] received payload.
+
+[2023-03-19 00:32:27.788] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:27.789] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 14
+}
+
+[2023-03-19 00:32:27.791] received:  Content-Length: 1743
+
+[2023-03-19 00:32:27.802] received payload.
+
+[2023-03-19 00:32:27.802] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:27.803] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+[2023-03-19 00:32:27.805] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:27.816] received:  Content-Length: 211
+
+[2023-03-19 00:32:27.827] received payload.
+[2023-03-19 00:32:27.827] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:27.931] parse session released session_id = 2 remain pool size = 2
+[2023-03-19 00:32:27.931] parse task timing: 0.127079486846924   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:28.033] received:  Content-Length: 212
+
+[2023-03-19 00:32:28.044] received payload.
+[2023-03-19 00:32:28.045] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:28.548] received:  Content-Length: 211
+
+[2023-03-19 00:32:28.560] received payload.
+
+[2023-03-19 00:32:28.560] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:28.662] received:  Content-Length: 254
+
+[2023-03-19 00:32:28.673] received payload.
+[2023-03-19 00:32:28.673] handling request:  textDocument/documentHighlight
+
+[2023-03-19 00:32:28.675] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:28.989] received:  Content-Length: 332
+
+[2023-03-19 00:32:29.000] received payload.
+
+[2023-03-19 00:32:29.000] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:29.001] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 36,
+      "character": 10
+    },
+    "end": {
+      "line": 36,
+      "character": 10
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:29.006] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 36,
+      "col": 10
+    },
+    "end": {
+      "row": 36,
+      "col": 10
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:29.011] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:29.922] received:  Content-Length: 63
+
+[2023-03-19 00:32:29.934] received payload.
+
+[2023-03-19 00:32:29.934] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:30.137] received:  Content-Length: 1783
+
+[2023-03-19 00:32:30.148] received payload.
+
+[2023-03-19 00:32:30.148] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:30.148] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 15
+}
+
+[2023-03-19 00:32:30.150] received:  Content-Length: 1747
+
+[2023-03-19 00:32:30.161] received payload.
+
+[2023-03-19 00:32:30.162] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:30.162] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:30.163] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:30.166] received:  Content-Length: 211
+
+[2023-03-19 00:32:30.177] received payload.
+
+[2023-03-19 00:32:30.177] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:30.281] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:30.281] parse task timing: 0.118160486221313   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:30.383] received:  Content-Length: 63
+
+[2023-03-19 00:32:30.394] received payload.
+[2023-03-19 00:32:30.394] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:30.395] received:  Content-Length: 1784
+
+[2023-03-19 00:32:30.406] received payload.
+[2023-03-19 00:32:30.406] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:30.406] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 16
+}
+
+[2023-03-19 00:32:30.408] received:  Content-Length: 274
+
+[2023-03-19 00:32:30.419] received payload.
+
+[2023-03-19 00:32:30.419] handling request:  textDocument/completion
+
+[2023-03-19 00:32:30.420] token: {
+  "full_token": "D",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "D"
+}
+
+[2023-03-19 00:32:30.433] bracket is  
+
+[2023-03-19 00:32:30.436] completions:  {
+  "init_count": 838,
+  "final_count": 200,
+  "time": 0.0162,
+  "isIncomplete": true
+}
+
+[2023-03-19 00:32:30.437] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:30.554] received:  Content-Length: 1748
+
+[2023-03-19 00:32:30.565] received payload.
+
+[2023-03-19 00:32:30.565] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:30.566] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:30.574] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:30.576] received:  Content-Length: 211
+
+[2023-03-19 00:32:30.587] received payload.
+
+[2023-03-19 00:32:30.587] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:30.690] parse session released session_id = 2 remain pool size = 2
+
+[2023-03-19 00:32:30.691] parse task timing: 0.124377727508545   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:30.692] received:  Content-Length: 214
+
+[2023-03-19 00:32:30.703] received payload.
+
+[2023-03-19 00:32:30.704] handling request:  completionItem/resolve
+
+[2023-03-19 00:32:30.706] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:30.709] received:  Content-Length: 330
+
+[2023-03-19 00:32:30.720] received payload.
+
+[2023-03-19 00:32:30.721] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:30.721] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 1
+    },
+    "end": {
+      "line": 37,
+      "character": 1
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:30.724] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 1
+    },
+    "end": {
+      "row": 37,
+      "col": 1
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:30.728] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:30.933] received:  Content-Length: 212
+
+[2023-03-19 00:32:30.975] received payload.
+
+[2023-03-19 00:32:30.976] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:31.383] received:  Content-Length: 211
+
+[2023-03-19 00:32:31.395] received payload.
+
+[2023-03-19 00:32:31.395] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:32.003] received:  Content-Length: 63
+
+[2023-03-19 00:32:32.014] received payload.
+
+[2023-03-19 00:32:32.014] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:32.015] received:  Content-Length: 1785
+
+[2023-03-19 00:32:32.026] received payload.
+
+[2023-03-19 00:32:32.027] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:32.027] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 17
+}
+
+[2023-03-19 00:32:32.031] received:  Content-Length: 274
+
+[2023-03-19 00:32:32.043] received payload.
+
+[2023-03-19 00:32:32.043] handling request:  textDocument/completion
+
+[2023-03-19 00:32:32.044] token: {
+  "full_token": "Da",
+  "right_token": "",
+  "package": null,
+  "accessor": "",
+  "token": "Da"
+}
+
+[2023-03-19 00:32:32.050] bracket is  
+
+[2023-03-19 00:32:32.051] completions:  {
+  "init_count": 139,
+  "final_count": 139,
+  "time": 0.0073,
+  "isIncomplete": false
+}
+
+[2023-03-19 00:32:32.053] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:32.131] received:  Content-Length: 1749
+
+[2023-03-19 00:32:32.142] received payload.
+
+[2023-03-19 00:32:32.142] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:32.143] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:32.144] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:32.248] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:32.249] parse task timing: 0.105335474014282   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:32.250] received:  Content-Length: 211
+
+[2023-03-19 00:32:32.261] received payload.
+[2023-03-19 00:32:32.261] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:32.262] received:  Content-Length: 330
+
+[2023-03-19 00:32:32.273] received payload.
+[2023-03-19 00:32:32.273] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:32.273] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 2
+    },
+    "end": {
+      "line": 37,
+      "character": 2
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:32.276] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 2
+    },
+    "end": {
+      "row": 37,
+      "col": 2
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:32.278] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:32.381] received:  Content-Length: 63
+
+[2023-03-19 00:32:32.434] received payload.
+
+[2023-03-19 00:32:32.434] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:32.536] received:  Content-Length: 1787
+
+[2023-03-19 00:32:32.547] received payload.
+
+[2023-03-19 00:32:32.547] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:32.547] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 19
+}
+
+[2023-03-19 00:32:32.549] received:  Content-Length: 1751
+
+[2023-03-19 00:32:32.560] received payload.
+
+[2023-03-19 00:32:32.560] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:32.561] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:32.563] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:32.568] received:  Content-Length: 1751
+
+[2023-03-19 00:32:32.579] received payload.
+
+[2023-03-19 00:32:32.580] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:32.580] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:32.582] parse session acquired session_id = 1 remain pool size = 0
+
+[2023-03-19 00:32:32.582] parse session kill 2
+
+[2023-03-19 00:32:32.582] parse session restart 2
+
+[2023-03-19 00:32:32.651] parse session released session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:32.760] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:32.760] parse task timing: 0.179234266281128   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:32.761] received:  Content-Length: 211
+
+[2023-03-19 00:32:32.773] received payload.
+
+[2023-03-19 00:32:32.773] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:32.774] received:  Content-Length: 330
+
+[2023-03-19 00:32:32.785] received payload.
+
+[2023-03-19 00:32:32.786] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:32.786] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 4
+    },
+    "end": {
+      "line": 37,
+      "character": 4
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:32.789] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 4
+    },
+    "end": {
+      "row": 37,
+      "col": 4
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:32.794] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:32.999] received:  Content-Length: 63
+
+[2023-03-19 00:32:33.010] received payload.
+
+[2023-03-19 00:32:33.011] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:33.011] received:  Content-Length: 1788
+
+[2023-03-19 00:32:33.023] received payload.
+
+[2023-03-19 00:32:33.023] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:33.024] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 20
+}
+
+[2023-03-19 00:32:33.027] received:  Content-Length: 212
+
+[2023-03-19 00:32:33.038] received payload.
+
+[2023-03-19 00:32:33.039] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:33.041] received:  Content-Length: 1752
+
+[2023-03-19 00:32:33.052] received payload.
+
+[2023-03-19 00:32:33.053] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:33.053] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:33.057] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:33.058] parse session ready 2 2023-03-19 00:32:33
+
+[2023-03-19 00:32:33.165] received:  Content-Length: 211
+
+[2023-03-19 00:32:33.177] received payload.
+
+[2023-03-19 00:32:33.177] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:33.179] received:  Content-Length: 330
+
+[2023-03-19 00:32:33.191] received payload.
+
+[2023-03-19 00:32:33.192] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:33.192] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 5
+    },
+    "end": {
+      "line": 37,
+      "character": 5
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:33.197] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 5
+    },
+    "end": {
+      "row": 37,
+      "col": 5
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:33.202] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:33.207] parse session released session_id = 2 remain pool size = 2
+
+[2023-03-19 00:32:33.207] parse task timing: 0.151768445968628   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:33.713] received:  Content-Length: 63
+
+[2023-03-19 00:32:33.724] received payload.
+
+[2023-03-19 00:32:33.724] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:33.826] received:  Content-Length: 1789
+
+[2023-03-19 00:32:33.838] received payload.
+
+[2023-03-19 00:32:33.838] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:33.839] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 21
+}
+
+[2023-03-19 00:32:33.842] received:  Content-Length: 1753
+
+[2023-03-19 00:32:33.853] received payload.
+
+[2023-03-19 00:32:33.854] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:33.854] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:33.857] parse session acquired session_id = 1 remain pool size = 1
+
+[2023-03-19 00:32:33.862] received:  Content-Length: 211
+
+[2023-03-19 00:32:33.874] received payload.
+
+[2023-03-19 00:32:33.874] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:33.978] parse session released session_id = 1 remain pool size = 2
+
+[2023-03-19 00:32:33.979] parse task timing: 0.122473239898682   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:33.980] received:  Content-Length: 330
+
+[2023-03-19 00:32:33.991] received payload.
+
+[2023-03-19 00:32:33.992] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:33.992] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 6
+    },
+    "end": {
+      "line": 37,
+      "character": 6
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:33.997] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 6
+    },
+    "end": {
+      "row": 37,
+      "col": 6
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:34.001] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:34.711] received:  Content-Length: 211
+
+[2023-03-19 00:32:34.722] received payload.
+
+[2023-03-19 00:32:34.723] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:34.724] received:  Content-Length: 212
+
+[2023-03-19 00:32:34.736] received payload.
+
+[2023-03-19 00:32:34.736] handling request:  textDocument/documentColor
+
+[2023-03-19 00:32:34.838] received:  Content-Length: 63
+
+[2023-03-19 00:32:34.849] received payload.
+
+[2023-03-19 00:32:34.850] unknown notification:  $/cancelRequest
+
+[2023-03-19 00:32:34.952] received:  Content-Length: 1801
+
+[2023-03-19 00:32:34.964] received payload.
+
+[2023-03-19 00:32:34.964] handling notification:  textDocument/didChange
+
+[2023-03-19 00:32:34.965] did change: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "version": 22
+}
+
+[2023-03-19 00:32:34.968] received:  Content-Length: 1765
+
+[2023-03-19 00:32:34.980] received payload.
+
+[2023-03-19 00:32:34.980] handling notification:  textDocument/didSave
+
+[2023-03-19 00:32:34.981] did save: {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+}
+
+[2023-03-19 00:32:34.984] parse session acquired session_id = 2 remain pool size = 1
+
+[2023-03-19 00:32:34.989] received:  Content-Length: 211
+
+[2023-03-19 00:32:35.000] received payload.
+[2023-03-19 00:32:35.000] handling request:  textDocument/foldingRange
+
+[2023-03-19 00:32:35.103] parse session released session_id = 2 remain pool size = 2
+
+[2023-03-19 00:32:35.104] parse task timing: 0.120595455169678   file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n
+
+[2023-03-19 00:32:35.105] received:  Content-Length: 332
+
+[2023-03-19 00:32:35.117] received payload.
+
+[2023-03-19 00:32:35.117] handling request:  textDocument/codeAction
+
+[2023-03-19 00:32:35.118] text_document_code_action:  {
+  "textDocument": {
+    "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n"
+  },
+  "range": {
+    "start": {
+      "line": 37,
+      "character": 18
+    },
+    "end": {
+      "line": 37,
+      "character": 18
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  }
+}
+
+[2023-03-19 00:32:35.123] document_code_action_reply:  {
+  "uri": "file:///home/juan-c/WIM-PC-2022/Otro/Visual%20Code/Trabajos/An%C3%A1lisis%20de%20encuesta%20de%20percepci%C3%B3n",
+  "range": {
+    "start": {
+      "row": 37,
+      "col": 18
+    },
+    "end": {
+      "row": 37,
+      "col": 18
+    }
+  },
+  "context": {
+    "diagnostics": [],
+    "triggerKind": 2
+  },
+  "result": []
+}
+
+[2023-03-19 00:32:35.127] deliver:  ["Response", "Message", "R6"]
+
+[2023-03-19 00:32:35.837] received:  Content-Length: 211
+
+[2023-03-19 00:32:35.849] received payload.
+
+[2023-03-19 00:32:35.849] handling request:  textDocument/documentLink
+
+[2023-03-19 00:32:35.850] received:  Content-Length: 212
+
+[2023-03-19 00:32:35.862] received payload.
+
+[2023-03-19 00:32:35.863] handling request:  textDocument/documentColor
+

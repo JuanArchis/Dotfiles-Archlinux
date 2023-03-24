@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[r]": {},
+    "r.alwaysUseActiveTerminal": true,
+    "r.lsp.lang": "utf-8"
+}

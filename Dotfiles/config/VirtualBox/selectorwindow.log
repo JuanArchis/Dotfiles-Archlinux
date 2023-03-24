@@ -1,0 +1,22 @@
+00:00:01.015179 VirtualBox GUI VM Selector Window 7.0.4 r154605 linux.amd64 (Nov 18 2022 12:54:46) release log
+00:00:01.015182 Log opened 2022-11-26T09:45:20.928842000Z
+00:00:01.015182 Build Type: release
+00:00:01.015185 OS Product: Linux
+00:00:01.015186 OS Release: 6.0.9-arch1-1
+00:00:01.015187 OS Version: #1 SMP PREEMPT_DYNAMIC Wed, 16 Nov 2022 17:01:17 +0000
+00:00:01.015226 DMI Product Name: HP Pavilion Desktop PC 570-p0xx
+00:00:01.015236 DMI Product Version: 
+00:00:01.015243 Firmware type: UEFI
+00:00:01.017483 Secure Boot: Disabled
+00:00:01.017545 Host RAM: 7399MB (7.2GB) total, 5420MB (5.2GB) available
+00:00:01.017549 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:01.017550 Process ID: 14100
+00:00:01.017550 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:01.017617 Qt version: 5.15.7
+00:00:01.019227 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:01.045448 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:02.469697 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:02.566833 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 480x185 x 960x540
+00:00:02.570117 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 480x178 x 960x540
+00:00:10.224540 QDBus error. No screen saver service found among registered DBus services.QDBus error. No screen saver service found among registered DBus services.GUI: UICommon: Handling aboutToQuit request..
+00:00:53.990473 GUI: UICommon: aboutToQuit request handled!

@@ -1,0 +1,7 @@
+2023-03-19 20:10:58.341 [warning] Persistent process "1": Process had no disconnect runners but was an orphan
+2023-03-19 20:10:58.342 [info] Persistent process reconnection "1"
+2023-03-19 20:10:58.344 [warning] Persistent process "1": Process had no disconnect runners but was an orphan
+2023-03-19 20:10:58.344 [info] Persistent process reconnection "1"
+2023-03-19 20:10:58.357 [warning] Shell integration cannot be enabled for executable "/usr/bin/R" and args ["--no-save","--no-restore"]
+2023-03-19 20:10:58.819 [info] Persistent process "1": Replaying 2237 chars and 1 size events
+2023-03-19 20:10:58.907 [info] Persistent process "1": Replaying 2237 chars and 1 size events

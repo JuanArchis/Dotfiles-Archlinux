@@ -1,0 +1,441 @@
+INFO 2/3/2023, 9:52:15 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 2/3/2023, 9:52:15 p. m.  start LM in devVersion=true
+INFO 2/3/2023, 9:52:15 p. m.  [Raven] instanceKey = f1204d05-c2ca-45c3-ac6e-7156c63d7845
+INFO 2/3/2023, 9:52:15 p. m.  ls put SLicense
+INFO 2/3/2023, 9:52:15 p. m.  [validateTrail] installDate is 3/2/2023, trail remains: 15 days
+INFO 2/3/2023, 9:52:15 p. m.  ------------------start------------------
+INFO 2/3/2023, 9:52:15 p. m.  typora version: 0.11.18
+INFO 2/3/2023, 9:52:16 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 2/3/2023, 9:52:16 p. m.  [focus] 1
+INFO 2/3/2023, 9:52:16 p. m.  synced recovery
+INFO 2/3/2023, 9:52:16 p. m.  handle document.loadInitData
+INFO 2/3/2023, 9:52:16 p. m.  addRecentFolder
+INFO 2/3/2023, 9:52:17 p. m.  [RenderProcess 1][Log] getContent
+INFO 2/3/2023, 9:52:17 p. m.  synced recovery
+INFO 2/3/2023, 9:52:17 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 2/3/2023, 9:52:17 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/3/2023, 9:52:27 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/CIencia de datos/Python machine learning.md]
+INFO 2/3/2023, 9:52:27 p. m.  addRecentDocument
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] getContent
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/3/2023, 9:52:27 p. m.  synced recovery
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 2/3/2023, 9:52:27 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/3/2023, 9:52:28 p. m.  synced recovery
+INFO 2/3/2023, 9:53:10 p. m.  [blur] 1
+INFO 2/3/2023, 9:53:10 p. m.  [win] blur
+INFO 2/3/2023, 9:53:46 p. m.  [focus] 1
+INFO 2/3/2023, 9:53:49 p. m.  [blur] 1
+INFO 2/3/2023, 9:53:49 p. m.  [win] blur
+INFO 2/3/2023, 9:53:58 p. m.  [focus] 1
+INFO 2/3/2023, 9:54:00 p. m.  [blur] 1
+INFO 2/3/2023, 9:54:00 p. m.  [win] blur
+INFO 2/3/2023, 9:54:02 p. m.  [focus] 1
+INFO 2/3/2023, 9:54:11 p. m.  [blur] 1
+INFO 2/3/2023, 9:54:11 p. m.  [win] blur
+INFO 2/3/2023, 9:54:33 p. m.  [focus] 1
+INFO 2/3/2023, 9:54:38 p. m.  [blur] 1
+INFO 2/3/2023, 9:54:38 p. m.  [win] blur
+INFO 2/3/2023, 9:54:54 p. m.  [focus] 1
+INFO 2/3/2023, 9:55:03 p. m.  [blur] 1
+INFO 2/3/2023, 9:55:03 p. m.  [win] blur
+INFO 2/3/2023, 9:55:28 p. m.  [focus] 1
+INFO 2/3/2023, 9:55:40 p. m.  [blur] 1
+INFO 2/3/2023, 9:55:40 p. m.  [win] blur
+INFO 18/3/2023, 11:32:06 a. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 11:32:08 a. m.  start LM in devVersion=true
+INFO 18/3/2023, 11:32:08 a. m.  [Raven] instanceKey = 81bc0652-7a0c-407c-91fe-5915c6a837c7
+INFO 18/3/2023, 11:32:08 a. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 11:32:08 a. m.  ls put SLicense
+INFO 18/3/2023, 11:32:08 a. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 11:32:08 a. m.  ------------------start------------------
+INFO 18/3/2023, 11:32:08 a. m.  typora version: 0.11.18
+INFO 18/3/2023, 11:32:10 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:10 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:10 a. m.  [win] blur
+INFO 18/3/2023, 11:32:10 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:10 a. m.  synced recovery
+INFO 18/3/2023, 11:32:14 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:14 a. m.  [win] blur
+INFO 18/3/2023, 11:32:14 a. m.  handle document.loadInitData
+INFO 18/3/2023, 11:32:14 a. m.  addRecentFolder
+INFO 18/3/2023, 11:32:14 a. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 11:32:14 a. m.  synced recovery
+INFO 18/3/2023, 11:32:15 a. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 11:32:15 a. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 11:32:15 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:16 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:16 a. m.  [win] blur
+INFO 18/3/2023, 11:32:17 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:19 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:19 a. m.  [win] blur
+INFO 18/3/2023, 11:32:20 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:20 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:20 a. m.  [win] blur
+INFO 18/3/2023, 11:32:21 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:25 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:25 a. m.  [win] blur
+INFO 18/3/2023, 11:32:29 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:30 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:30 a. m.  [win] blur
+INFO 18/3/2023, 11:32:30 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:31 a. m.  [blur] 1
+INFO 18/3/2023, 11:32:31 a. m.  [win] blur
+INFO 18/3/2023, 11:32:45 a. m.  [focus] 1
+INFO 18/3/2023, 11:32:48 a. m.  synced recovery
+INFO 18/3/2023, 11:32:48 a. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 11:32:48 a. m.  ------------------will-quit------------------
+INFO 18/3/2023, 11:32:48 a. m.  -----------------quit------------------
+INFO 18/3/2023, 11:32:48 a. m.  closeLogging
+INFO 18/3/2023, 6:15:36 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:15:37 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:15:37 p. m.  [Raven] instanceKey = 3887e05e-8849-47ae-904d-fba5084d4f13
+INFO 18/3/2023, 6:15:37 p. m.  ls put SLicense
+INFO 18/3/2023, 6:15:37 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:15:37 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:15:37 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:15:38 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:15:38 p. m.  [focus] 1
+INFO 18/3/2023, 6:15:38 p. m.  [blur] 1
+INFO 18/3/2023, 6:15:38 p. m.  [win] blur
+INFO 18/3/2023, 6:15:38 p. m.  [focus] 1
+INFO 18/3/2023, 6:15:39 p. m.  synced recovery
+INFO 18/3/2023, 6:15:41 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:15:41 p. m.  addRecentFolder
+INFO 18/3/2023, 6:15:41 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:15:41 p. m.  synced recovery
+INFO 18/3/2023, 6:15:41 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:15:41 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:15:48 p. m.  [blur] 1
+INFO 18/3/2023, 6:15:48 p. m.  [win] blur
+INFO 18/3/2023, 6:15:49 p. m.  [focus] 1
+INFO 18/3/2023, 6:15:53 p. m.  [blur] 1
+INFO 18/3/2023, 6:15:53 p. m.  [win] blur
+INFO 18/3/2023, 6:15:54 p. m.  [focus] 1
+INFO 18/3/2023, 6:15:55 p. m.  [blur] 1
+INFO 18/3/2023, 6:15:55 p. m.  [win] blur
+INFO 18/3/2023, 6:15:55 p. m.  [focus] 1
+INFO 18/3/2023, 6:15:59 p. m.  synced recovery
+INFO 18/3/2023, 6:15:59 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:15:59 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:15:59 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:15:59 p. m.  closeLogging
+INFO 18/3/2023, 6:17:36 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:17:36 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:17:36 p. m.  [Raven] instanceKey = c8530172-9fca-4779-931e-eb6827d1d105
+INFO 18/3/2023, 6:17:36 p. m.  ls put SLicense
+INFO 18/3/2023, 6:17:36 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:17:36 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:17:36 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:17:37 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:17:37 p. m.  [focus] 1
+INFO 18/3/2023, 6:17:37 p. m.  synced recovery
+INFO 18/3/2023, 6:17:37 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:17:37 p. m.  addRecentFolder
+INFO 18/3/2023, 6:17:37 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:17:37 p. m.  synced recovery
+INFO 18/3/2023, 6:17:38 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:17:38 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:17:53 p. m.  synced recovery
+INFO 18/3/2023, 6:17:53 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:17:53 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:17:53 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:17:53 p. m.  closeLogging
+INFO 18/3/2023, 6:18:40 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:18:40 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:18:40 p. m.  [Raven] instanceKey = f6c03d0a-8670-4b4b-b923-701b4efe8222
+INFO 18/3/2023, 6:18:40 p. m.  ls put SLicense
+INFO 18/3/2023, 6:18:40 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:18:40 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:18:40 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:18:41 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:18:41 p. m.  [focus] 1
+INFO 18/3/2023, 6:18:41 p. m.  [blur] 1
+INFO 18/3/2023, 6:18:41 p. m.  [win] blur
+INFO 18/3/2023, 6:18:41 p. m.  [focus] 1
+INFO 18/3/2023, 6:18:41 p. m.  synced recovery
+INFO 18/3/2023, 6:18:41 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:18:41 p. m.  addRecentFolder
+INFO 18/3/2023, 6:18:41 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:18:41 p. m.  synced recovery
+INFO 18/3/2023, 6:18:42 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:18:42 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:19:00 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/Trabajo de grado/Notas.md]
+INFO 18/3/2023, 6:19:00 p. m.  addRecentDocument
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:19:00 p. m.  synced recovery
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:19:00 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:19:00 p. m.  synced recovery
+INFO 18/3/2023, 6:19:09 p. m.  [blur] 1
+INFO 18/3/2023, 6:19:09 p. m.  [win] blur
+INFO 18/3/2023, 6:19:37 p. m.  [focus] 1
+INFO 18/3/2023, 6:19:38 p. m.  [blur] 1
+INFO 18/3/2023, 6:19:38 p. m.  [win] blur
+INFO 18/3/2023, 6:20:02 p. m.  [focus] 1
+INFO 18/3/2023, 6:20:03 p. m.  [blur] 1
+INFO 18/3/2023, 6:20:03 p. m.  [win] blur
+INFO 18/3/2023, 6:20:03 p. m.  [focus] 1
+INFO 18/3/2023, 6:20:05 p. m.  [blur] 1
+INFO 18/3/2023, 6:20:05 p. m.  [win] blur
+INFO 18/3/2023, 6:20:15 p. m.  [focus] 1
+INFO 18/3/2023, 6:20:16 p. m.  [blur] 1
+INFO 18/3/2023, 6:20:16 p. m.  [win] blur
+INFO 18/3/2023, 6:20:49 p. m.  [focus] 1
+INFO 18/3/2023, 6:20:50 p. m.  synced recovery
+INFO 18/3/2023, 6:20:50 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:20:50 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:20:50 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:20:50 p. m.  closeLogging
+INFO 18/3/2023, 6:20:53 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:20:53 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:20:53 p. m.  [Raven] instanceKey = 46beb798-9a5a-4a34-8d06-30236ff1e899
+INFO 18/3/2023, 6:20:53 p. m.  ls put SLicense
+INFO 18/3/2023, 6:20:53 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:20:53 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:20:53 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:20:53 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:20:53 p. m.  [focus] 1
+INFO 18/3/2023, 6:20:53 p. m.  synced recovery
+INFO 18/3/2023, 6:20:54 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:20:54 p. m.  addRecentFolder
+INFO 18/3/2023, 6:20:54 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:20:54 p. m.  synced recovery
+INFO 18/3/2023, 6:20:55 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:20:55 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:20:58 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/Trabajo de grado/Trabajo per se.md]
+INFO 18/3/2023, 6:20:58 p. m.  addRecentDocument
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:20:58 p. m.  synced recovery
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:20:58 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:20:58 p. m.  synced recovery
+INFO 18/3/2023, 6:21:04 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/CIencia de datos/Python machine learning.md]
+INFO 18/3/2023, 6:21:04 p. m.  addRecentDocument
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:21:04 p. m.  synced recovery
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:21:04 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:21:04 p. m.  synced recovery
+INFO 18/3/2023, 6:21:15 p. m.  [blur] 1
+INFO 18/3/2023, 6:21:15 p. m.  [win] blur
+INFO 18/3/2023, 6:21:17 p. m.  [focus] 1
+INFO 18/3/2023, 6:21:18 p. m.  [blur] 1
+INFO 18/3/2023, 6:21:18 p. m.  [win] blur
+INFO 18/3/2023, 6:21:53 p. m.  [focus] 1
+INFO 18/3/2023, 6:21:54 p. m.  synced recovery
+INFO 18/3/2023, 6:21:54 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:21:54 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:21:54 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:21:54 p. m.  closeLogging
+INFO 18/3/2023, 6:21:56 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:21:56 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:21:56 p. m.  [Raven] instanceKey = a861c923-40d6-4ef5-9de2-b737bb0b12b7
+INFO 18/3/2023, 6:21:56 p. m.  ls put SLicense
+INFO 18/3/2023, 6:21:56 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:21:56 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:21:56 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:21:56 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:21:56 p. m.  [focus] 1
+INFO 18/3/2023, 6:21:56 p. m.  synced recovery
+INFO 18/3/2023, 6:21:57 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:21:57 p. m.  addRecentFolder
+INFO 18/3/2023, 6:21:57 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:21:57 p. m.  synced recovery
+INFO 18/3/2023, 6:21:58 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:21:58 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:22:00 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/CIencia de datos/Python machine learning.md]
+INFO 18/3/2023, 6:22:00 p. m.  addRecentDocument
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:22:00 p. m.  synced recovery
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:22:00 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:22:01 p. m.  synced recovery
+INFO 18/3/2023, 6:22:19 p. m.  [blur] 1
+INFO 18/3/2023, 6:22:19 p. m.  [win] blur
+INFO 18/3/2023, 6:22:51 p. m.  [focus] 1
+INFO 18/3/2023, 6:22:52 p. m.  synced recovery
+INFO 18/3/2023, 6:22:52 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:22:52 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:22:52 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:22:52 p. m.  closeLogging
+INFO 18/3/2023, 6:22:58 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:22:58 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:22:58 p. m.  [Raven] instanceKey = 842e2ea0-928f-45ed-a92d-428437b8c1ae
+INFO 18/3/2023, 6:22:58 p. m.  ls put SLicense
+INFO 18/3/2023, 6:22:58 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:22:58 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:22:58 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:22:58 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:22:58 p. m.  [focus] 1
+INFO 18/3/2023, 6:22:58 p. m.  synced recovery
+INFO 18/3/2023, 6:22:59 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:22:59 p. m.  addRecentFolder
+INFO 18/3/2023, 6:22:59 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:22:59 p. m.  synced recovery
+INFO 18/3/2023, 6:23:00 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:23:00 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:23:02 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/CIencia de datos/Python machine learning.md]
+INFO 18/3/2023, 6:23:02 p. m.  addRecentDocument
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:23:02 p. m.  synced recovery
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:23:02 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:23:03 p. m.  synced recovery
+INFO 18/3/2023, 6:23:08 p. m.  [blur] 1
+INFO 18/3/2023, 6:23:08 p. m.  [win] blur
+INFO 18/3/2023, 6:23:47 p. m.  [focus] 1
+INFO 18/3/2023, 6:23:48 p. m.  synced recovery
+INFO 18/3/2023, 6:23:48 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:23:48 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:23:48 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:23:48 p. m.  closeLogging
+INFO 18/3/2023, 6:23:51 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:23:51 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:23:51 p. m.  [Raven] instanceKey = 9f933af1-be5a-4809-b2bc-4b13e460c746
+INFO 18/3/2023, 6:23:51 p. m.  ls put SLicense
+INFO 18/3/2023, 6:23:51 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:23:51 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:23:51 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:23:51 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:23:51 p. m.  [focus] 1
+INFO 18/3/2023, 6:23:51 p. m.  synced recovery
+INFO 18/3/2023, 6:23:52 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:23:52 p. m.  addRecentFolder
+INFO 18/3/2023, 6:23:52 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:23:52 p. m.  synced recovery
+INFO 18/3/2023, 6:23:52 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:23:52 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:23:54 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/CIencia de datos/Python machine learning.md]
+INFO 18/3/2023, 6:23:54 p. m.  addRecentDocument
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:23:54 p. m.  synced recovery
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:23:54 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:23:54 p. m.  synced recovery
+INFO 18/3/2023, 6:24:06 p. m.  [blur] 1
+INFO 18/3/2023, 6:24:06 p. m.  [win] blur
+INFO 18/3/2023, 6:24:10 p. m.  [focus] 1
+INFO 18/3/2023, 6:24:13 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/Trabajo de grado/Trabajo per se.md]
+INFO 18/3/2023, 6:24:13 p. m.  addRecentDocument
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:24:13 p. m.  synced recovery
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:24:13 p. m.  synced recovery
+INFO 18/3/2023, 6:24:13 p. m.  switchDocument 1 [/home/juan-c/WIM-PC-2022/Otro/Marktex/Trabajo de grado/Notas.md]
+INFO 18/3/2023, 6:24:13 p. m.  addRecentDocument
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:24:13 p. m.  synced recovery
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] onSwitchDocumentTarget
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] reset NodeMap
+INFO 18/3/2023, 6:24:13 p. m.  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 18/3/2023, 6:24:14 p. m.  synced recovery
+INFO 18/3/2023, 6:24:20 p. m.  synced recovery
+INFO 18/3/2023, 6:24:20 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:24:20 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:24:20 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:24:20 p. m.  closeLogging
+INFO 18/3/2023, 6:30:49 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:30:49 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:30:49 p. m.  [Raven] instanceKey = a0906ea6-b7d3-471d-98ed-eef2d4e7db0d
+INFO 18/3/2023, 6:30:49 p. m.  ls put SLicense
+INFO 18/3/2023, 6:30:49 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:30:49 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:30:49 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:30:49 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:30:49 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:49 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:49 p. m.  [win] blur
+INFO 18/3/2023, 6:30:49 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:49 p. m.  synced recovery
+INFO 18/3/2023, 6:30:50 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:30:50 p. m.  addRecentFolder
+INFO 18/3/2023, 6:30:50 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:30:50 p. m.  synced recovery
+INFO 18/3/2023, 6:30:50 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:30:50 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:30:52 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:52 p. m.  [win] blur
+INFO 18/3/2023, 6:30:53 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:53 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:53 p. m.  [win] blur
+INFO 18/3/2023, 6:30:54 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:54 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:54 p. m.  [win] blur
+INFO 18/3/2023, 6:30:55 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:55 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:55 p. m.  [win] blur
+INFO 18/3/2023, 6:30:56 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:56 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:56 p. m.  [win] blur
+INFO 18/3/2023, 6:30:57 p. m.  [focus] 1
+INFO 18/3/2023, 6:30:57 p. m.  [blur] 1
+INFO 18/3/2023, 6:30:57 p. m.  [win] blur
+INFO 18/3/2023, 6:31:08 p. m.  [focus] 1
+INFO 18/3/2023, 6:31:08 p. m.  synced recovery
+INFO 18/3/2023, 6:31:08 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:31:08 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:31:08 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:31:08 p. m.  closeLogging
+INFO 18/3/2023, 6:40:42 p. m.  launch with argv [/usr/share/typora/Typora]
+INFO 18/3/2023, 6:40:42 p. m.  start LM in devVersion=true
+INFO 18/3/2023, 6:40:42 p. m.  [Raven] instanceKey = 7eee8003-1789-49a1-b38a-a914a8d2a1e6
+INFO 18/3/2023, 6:40:42 p. m.  ls put SLicense
+INFO 18/3/2023, 6:40:42 p. m.  [validateTrail] installDate is 3/18/2023, trail remains: 15 days
+INFO 18/3/2023, 6:40:42 p. m.  ------------------start------------------
+INFO 18/3/2023, 6:40:42 p. m.  typora version: 0.11.18
+INFO 18/3/2023, 6:40:42 p. m.  [Raven] userId = fe7750de-30ce-48d5-bfdc-7e22f6dc21d8
+INFO 18/3/2023, 6:40:42 p. m.  [focus] 1
+INFO 18/3/2023, 6:40:42 p. m.  [blur] 1
+INFO 18/3/2023, 6:40:42 p. m.  [win] blur
+INFO 18/3/2023, 6:40:42 p. m.  [focus] 1
+INFO 18/3/2023, 6:40:42 p. m.  synced recovery
+INFO 18/3/2023, 6:40:43 p. m.  handle document.loadInitData
+INFO 18/3/2023, 6:40:43 p. m.  addRecentFolder
+INFO 18/3/2023, 6:40:43 p. m.  [RenderProcess 1][Log] getContent
+INFO 18/3/2023, 6:40:43 p. m.  synced recovery
+INFO 18/3/2023, 6:40:44 p. m.  [blur] 1
+INFO 18/3/2023, 6:40:44 p. m.  [win] blur
+INFO 18/3/2023, 6:40:44 p. m.  [focus] 1
+INFO 18/3/2023, 6:40:44 p. m.  [RenderProcess 1][Log] onBecomeActive
+INFO 18/3/2023, 6:40:44 p. m.  [RenderProcess 1][Log] File.activeWindow = true
+INFO 18/3/2023, 6:40:44 p. m.  [blur] 1
+INFO 18/3/2023, 6:40:44 p. m.  [win] blur
+INFO 18/3/2023, 6:40:51 p. m.  [focus] 1
+INFO 18/3/2023, 6:40:51 p. m.  [blur] 1
+INFO 18/3/2023, 6:40:51 p. m.  [win] blur
+INFO 18/3/2023, 6:40:59 p. m.  [focus] 1
+INFO 18/3/2023, 6:41:00 p. m.  [blur] 1
+INFO 18/3/2023, 6:41:00 p. m.  [win] blur
+INFO 18/3/2023, 6:41:02 p. m.  [focus] 1
+INFO 18/3/2023, 6:41:03 p. m.  synced recovery
+INFO 18/3/2023, 6:41:03 p. m.  ----------------before-quit-----------------
+INFO 18/3/2023, 6:41:03 p. m.  ------------------will-quit------------------
+INFO 18/3/2023, 6:41:03 p. m.  -----------------quit------------------
+INFO 18/3/2023, 6:41:03 p. m.  closeLogging

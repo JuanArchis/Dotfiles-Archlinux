@@ -1,0 +1,370 @@
+
+
+# 									Python machine learning
+
+# 					Capítulo 1: Definiciones y conceptos preliminares
+
+**Aprendizaje supervisado:**  TIpo de aprendizaje en el cuál los datos de entrenamiento ya están etiquetados y, por ende, las salidas del modelo se conocen. Se conoce como aprendizaje supervizado en gran medida porque los datos indican la esencia del modelo (básciamente le dicen qué hacer).  *Verbigracia, las tareas de calsificación y/o regresión (predicción)* .
+
+**Aprendizaje reforzado:** Consiste en dejar que el modelo aprenda de su entorno, ofreciendo una retroalimentación en función de una medida de "recompensa", así, con base en esta, dicho modelo aprenderá a minimizar las recompensas negativas.  *A saber, el ejemplo más tribial, los algoritmos de ajedreź; otro ejemplo pertinente es el campo de la robótica, más específicamente, enseñarle al robot aprender a mover las manos. Pues, en lugar de enseñarle paso por paso, se deja que este aprenda de su entorno (tipo prueba y error).*  
+
+**Aprendizaje no supervisado:** Parte de datos de entrenamiento que no establecen una categorías a priori. Se busca establecer estructuras ocultas en los datos con base en una variable de salida o función de recompensa. *Por ejemplo, los agrupamientos o clustering; las categorías que dicho modelo establece no están fundadas por las categorías de los datos de entrenamiento, generalmente están fundadas en una medida de distancia.  El aprendizaje permite, por ejemplo, a vendedores, descubrir grupos de clientes basados en otras medidas.*
+
+- Una sub categoría del aprendizaje no supervizado es la reducción de dimensionalidad. Esta permite, enfunción de una pocas variables ficticias, explicar todas las variables sin perder la mayori nformación que las variables en conjunto ofrecen (también es útil para la visualización de datos). No es necesario realizarlo antes del análisis clúster, empero, dichos algoritmos de agrupación basan su funcionamiento en distancias y, se ha demostrado que en dimensiones altas, las distancias cortas y largas tienden a ser uniformes. *"La premisa de la búsqueda del vecino más cercano es que los puntos "más cercanos" son más relevantes que los puntos "más lejanos", pero si todos los puntos están esencialmente uniformemente distantes entre sí, la distinción no tiene sentido."*
+
+- *Nuestras intuiciones, que provienen de un mundo tridimensional, a menudo no se aplican en los de alta dimensión. En dimensiones altas, la mayor parte de la masa de una distribución gaussiana multivariada no está cerca de la media, sino en una "capa" cada vez más distante a su alrededor; y la mayor parte del volumen de una naranja de grandes dimensiones está en la piel, no en la pulpa. **Léase:** https://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf
+
+**Étapas del modelado:** Anteriormente se habló de los distintos tipos de aprendizaje, sin embargo, cada aprendizaje debe seguir una estructura de modelado en forma general; dicha estructura está compuesta por los siguientes pasos:
+
+- Pre-procesamiento: Consiste en dar forma a los datos con base en el modelo a usar. Por ejemplo, algunos modelos requieren datos estandarizado o que estén en un mismo rango; o a su vez, los datos presentan variables irrelevantes o que están correlacionadas con otras y por ende su aporte se puede ver en función de otra variable (también si se quiere eliminar el ruido que generan algunos variables), en tal caso se usarían las técnicas de reducción de dimensiones antes del modelado. La etapa de pre-procesamiento es fundamental, ya que esta depura y/o prepara el alimento del modelo.
+
+- Entrenamiento y selección: En esta etapa se entrena el modelo y, se busca comparar  varios modelos (ya que raramente un problema sólo tiene una respuesta) con base en la valdiación cruzada (busca separar datos de entrenamiento y datos de validación).
+
+- Evaluación y predicción: La validación cruzada es un método fundamental con el cual, no sólo se valida el modelo sino que también se valida la predicción para nuevos datos. Si el modelo se entrena con todos los datos y se valida con estos mismos, este puede recoger el ruido o la variabildiad de los datos (el modelo no aprende, memoriza).
+
+# 			Capítulo 2: Algoritmos simples de aprendizaje automático para la clasificación 
+
+## 							Perceptrón de Rosenblatt
+
+Los inicios más remotos del aprendizaje automático se reflejan en la representación de una neurona humana a una simplificación matemática, Considérese a la neurona como combinación lineal de los valores de entrada y  pesos. Si su tarea es la clasificación binaria, los pesos son los parámetros que se optimizarán de tal forma de encontrar una clasificación pertinente. Definase la combinación linal como:
+$$
+Z=w_1x_1+w_2x_2+w_3x_3+...
+$$
+
+ Dicho perceptrón viene antepuesto por una función $\phi(z)$ , llamada función de decisión (Indica la clasificación que tendrá la salida de la función $Z$ con base en el umbral $\theta$). Por, ejemplo:
+
+$$
+\phi(Z)=\begin{Bmatrix}
+1 ; z\geq \theta \\ -1; otro
+\end{Bmatrix}
+$$
+Así, si la entrada de red de una muestra concreta es mayor al umbral, el perceptrón predecirá 1. Para efectos prácticos y de simplificación, el hiperparámetro $\theta$ se considerará como un parámetro más de la función $Z$ (pasando este a restar). La nueva función de decisión $\phi(z)$ será: 
+
+$$
+\phi(Z)=\begin{Bmatrix}
+1 ; z\geq 0 \\ -1; otro
+\end{Bmatrix}
+$$
+Donde 
+
+$$
+Z=w_0x_0+w_1x_1+w_2x_2+w_3x_3+...=W^TX
+$$
+Y también
+
+- $w_0=-\theta$ será el intercepto (sesgo o bias) con el eje y cuando $x=0$
+
+- $x_0=1$
+
+Al reescribir de esta forma la función $Z$, es posible la estimación del umbral como uno más de los pesos de la neurona.  La función $\phi(Z)$, o comunmente denomianda como escalón, sigue la siguiente gráfica:
+
+## 													Aprendizaje del perceptrón
+
+Ahora bien, el trabajo de aprendizaje es básicamente la forma en que aprende el  algoritmo con base en los datos, es decir, la forma de estimación del vector de parámetros o pesos $W$, pues estos indican en mayor medida el grado de activación de la neurona.  Los pasos del perceptrón inicial de Rosenblatt son:
+
+1. Iniciar la neurona con pesos iguales o cercanos a 0.
+
+2. Para cada dato de entrenamiento $X_i$, calcular la predicción correspondiente $\hat{Y}$. Con base en la predicción anterior, calcular de nuevo los pesos.
+
+Así, la actualización de los pesos del vector $W$ se pueden escribir como:
+
+$$
+w_j=w_j+\Delta w_j
+$$
+
+
+Donde $w_j$ es el valor inicial dado de este y, $\Delta w_j$ indica el cambio con el que se actualizará el parámetro $w_j$. El cambio en el peso está dado por:
+
+$$
+\Delta w_j=\eta (y_i-\hat{y_i})x_{ij}
+$$
+
+- $\eta: \in(0,1] $ : Es una constante , denominada como ratio o tasa de aprendizaje. Hiperparámetro que para las redes multicapas, controlen la velocidad o el paso con el que aprende el algoritmo (si la tasa es muy baja da paso muy cortos y este no puede ser óptimo en tiempoy, si por otro lado es muy alta, da pasos muy alrgos y puede perderse en la estimación).
+
+- $y_{i(n*1)}:$ Es la etiqueta, en función de 0 o 1 (es decir, la etiqueta real ya clasificada con base en la función de activación $\phi(Z)$) . Note que se ejecuta por cada fila de la variable de respuesta.
+
+- $x_{ij (n*p)}$: Es la observación de la variable $j$ en la fila $i$.
+
+  #### 																									Importante
+
+Note que el algoritmo se ejecuta por observaciones, es decir, la actualización de los parámetros $\Delta w_j$ recorre cada observación  $i$ asociada al parámetro a estimar (**cada parámetro tendrá $i$ estimaciones que se multiplicarán por cada observación $x_{ij}$ asociada**). Esta metodología  de aprendizaje se conoce como ley de Hebb. Básicamente, la estimación varía de acuerdo a cada observación, por esto $w_j=w_j+\Delta w_j$ (**la actualización indica el aprendizaje por cada observación $x_{ij}$**); el parámetro aprende de cada observación de su variable asignada. ***Así, el valor de los parámetros estimados será la última actualización (salida) que contendrá el aprendizaje de todas las demás observaciones. Note que si la predicción es correcta, $\Delta w_j=0$ y no afecta la estimación anterior.***
+
+De igual forma, la estimación del bias  será: $\Delta w_0=\eta (y_i-\hat{y_i})$. Igualmente se ejecuta por diferencia de la variable de respuesta. Se selecciona la última actualización que contiene los demás aprendizajes. 
+
+El aprendizaje de forma matricial es:
+$$
+\mathbf{\Delta w_j}=\eta (\mathbf{y_i}-\mathbf{\hat{y_i}})\mathbf{x_{j}}
+$$
+
+#### 																					Utilidad de la función de Hebb
+
+La utilidad de la función de actualización de los parámetro $\Delta w_j$ radica en la posibilidad de variar cada peso hasta conseguir arrastar las predicciones incorrectas a las predicciones correctas, dado que, si la neurona o perceptrón predice correctamente la etiqueta de clase, los pesos no cambian.
+$$
+\Delta w_j=\eta(1-1)x_{ij}=0
+$$
+
+$$
+\Delta w_j=\eta(-1-(-1))x_{ij}=0
+$$
+
+Si por otro lado, la predicción es errónea, los pesos se verán empujados hacia la dirección en la que debe ir la clase (esto hace que, la próxima vez que se encuentre con esa misma muestra, la actualización del parámetro sea mayor en función de su predicción y así superar el umbral, ya sea de forma negativa o positiva). Por ejemplo, si $x_{ij}=0.5,\eta =1, \hat{y_i}=-1,y_i=1$
+$$
+\Delta w_j=(1-(-1))0.5=1
+$$
+En este caso, la actualización es 1, es decir, la próxima vez que la neurona se encuentre con la misma muestra, es más probable que estuviera por encima del umbral de la función escalón unitario. Si por ejemplo, $x_{ij}=2, \Delta w_j=4$; Lo que hace más probable clasficiarlo correctamente la próxima vez. Note que cada cambio tendrá un error, $\epsilon_i$, en las iteraciones del algoritmo sólo se consible el último error procediente de la última actualización.
+
+
+
+**Es importante remarcar que la convergencia anterior sólo se da para clasificaciones LINEALES (Si no son lineales, los pesos no dejarían de actualizarse). Para clasificaciones más complejas se utilizan las redes neuronales multicapas**
+
+![image-20221212143011614](/home/juan-c/.config/Typora/typora-user-images/image-20221212143011614.png)
+
+Resumiendo el apartado anterior, la estructura de una neurona o perceptrón es:
+
+![image-20221212143036684](/home/juan-c/.config/Typora/typora-user-images/image-20221212143036684.png)
+
+El anterior dragrama muestra cómo la neurona recibe las entradas $ X $de $m$ variables y las combina con los pesos $W$, para que la entrada sea la suma de lo anterior. A continuación la entrada pasa por la función umbral que genere una salida binaria. Durante el aprendizaje la salida predicha se utiliza para clacular el error y con base en este actualizar los pesos o estimar los parámetros de la neurona.
+
+### 													Implementación del perceptrón neurona en python
+
+#### 																								A priori al código
+
+- Class
+
+En python existen estructuras tipo clase (class). Esta básicamente comple la función de clasificar varios objetos (o funciones) en clases creadas, a saber:
+
+```python
+class Fracción: # Defino una clase llamada Fracción
+
+    def imprime(self,num,den): # Se crea un objeto de clase o función llamada imprime, con argumentos num y den
+        self.num=num  # se definen las variable de objeto num y dem iguales a los parámetros de entrada de la clase
+        self.den=den  
+        print(self.num,"/",self.den) # se aplica la función se imprimir
+
+    def división(self): # DEfino otra función, al refereenciar el anterior selft, me permite usar los parámetros num y den
+        # con los valores asignados al llamarla anteriormente
+        print(self.num/self.den)
+
+a=Fracción()  # Define la variable a como clase Fracción
+a.imprime(1,2) # aplico el objeto o función imprime
+a.división() # se aplica el objeto división con los parámetros anteriores
+```
+
+Como se evidencia en el ejemplo anterior, una clase permite crear una estructura con varios objetos (o funciones) y poder utilizar cada una de estas. 
+
+- Return
+
+El retornot de una función es importante porque esta permite que, dados los parámetros de una función establecida, esa linea sea igual al valor devuelto. Por ejemplo:
+
+```python
+def suma(a,b):
+    a+b
+suma(2,3)
+------- > No imprime nada, dado que la función se ejecuta pero suma(2,3) 
+no es igual a nada. Por el contrario, si se utiliza el return.
+
+
+
+def suma(a,b):
+ return a+b
+suma(2,3)
+------- > 5. Esto indica que suma(2,3) es intercambiado por el valor 5. 
+- suma(2,3)=5 de forma literal
+```
+
+#### 																		Implementación del perceptrón de rosenblatt
+
+```python
+"------------ Importando librerias de python------------------"
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+"------------ Perceptrón de rosenblatt------------------"
+
+class Perceptron(object): # Define la neurona como clase (de tal forma que dentro de esta tenga todlas las funciones y salidas necesarias)
+    """Percetrón básico (clasificación lineal binaria).
+
+    Hiperpaŕametros
+    ------------
+    eta: Es el hiperparámetro de tasa de aprendizaje [0.0 a 1.0]
+
+    n_iter: Hiper parámetro que controla en número de iteraciones (En redes neuronales adaptativas se elimina este)
+
+    random_state : Semilla (paragenerar los pesos iniciales, estos se generan con base en una D~N(0,0.01))
+
+    Atributos
+    -----------
+    w_ : Pesos después del ajuste n_iter1
+
+    errors_ : Errores en cada ajuste n_iter
+
+    """
+    def __init__(self, eta, n_iter, random_state): # Definir una función que contendrá los hiperparámetros anteriores
+        self.eta = eta
+        self.n_iter = n_iter
+        self.random_state = random_state
+
+    def fit(self, X, y):  #Define otra función que contrendrá los datos de entrenamiento (X) y los datos objetivos (Y)
+        """Fit training data.
+
+        Parameters
+        ----------
+        X : Matriz de datos de entrenamiento (MATRIZ X)
+        y : Vector de variable de respuesta (Variable binaria)
+
+        Returns
+        -------
+        self : object
+
+        """
+        rgen = np.random.RandomState(self.random_state) # Semilla
+        self.w_ = rgen.normal(loc=0.0, scale=0.01, size=1 + X.shape[1]) # Generación de los pesos iniciales (Cercanos a 0) con base en la semilla
+        # Note que el tamaño de la cantidad de  pesos está controlado por 1+X.shape[1], este indica que se tomaran tantos pesos como variables (columnas) y además, se toma w0 (bias)
+        self.errors_ = [] # Se define el vector de errores
+
+        """ Aquí empieza el algoritmo per se (la parte iterativa). Esta implementación NO hace uso de notación matricial, en su reemplazo, usa la el cliclo zip, para ejecutar cada paso individualmente (tipo listas) """
+
+        for _ in range(self.n_iter): #Ejecuta el ciclo sin la necesidad de establecer la variable iterativa (i); este itera la cantidad dada por el hiperparámetro
+            errors = 0 # DEfine el error en 0
+            for xi, target in zip(X, y): # La función zip(X,y) permite ejercutar un cliclo en paralelo (este permite trabajar individualmente con cada posición de los vectores)
+             # note que como entrada recibe la matriz X y el vector y, luego los denomina como xi y target. El proceso se repite por cada posición [i], eso lo hace el target zip.
+
+                update = self.eta * (target - self.predict(xi)) # Se crea el cambio de los pesos con base en el criterio  de hebb (note que el cliclo trabaja por filas).             
+                self.w_[1:] += update * xi # actualiza (+= actualiza una variable si no es lista, en caso de ser lista une los valores respetando posición) y multiplican con cada variable (finalizando la maximización) y actulizando del vector de pesos [w_1,..w_n] 
+                self.w_[0] += update # Se actualiza el parámetro bias o sesgo (w_0). Note que el poerador += Suma un valor y la variable y asigna el resultado a esa variable. 
+                errors += int(update != 0.0) # Se cuantifica el error en un boleano (si es diferente de 0, arroja 1 al error, caso contrario es 0). Note que se suman con el error anterior de la iteración, por esto el +=.
+            self.errors_.append(errors) # actualiza el vector de error definido anteriormente añadiendole por la derecha el valor del error anteriormente calculador (creando así un vector de errores por cada peso)
+        return self #Devuelve todas las intancias que llamó
+
+    def net_input(self, X): # Se crea una nueva función que contendrá las nuevas entradas (Note que con seflt llama las entradas anteriores que usa, X)
+        """Calculate net input"""
+        return np.dot(X, self.w_[1:]) + self.w_[0] #Calcula el producto punto de X y el vector W (seleciona las últimas salidas del ciclo), después lo suma con el bias. Finalmente lo devuelve (net_input(self, X) será igual al resultado)
+
+    def predict(self, X): # Se establece la función que predice la clase
+        """Return class label after unit step"""
+        return np.where(self.net_input(X) >= 0.0, 1, -1) # Primero crea la condición de, si la suma ponderada (función anterior) es mayor que 0, este es 1, caso contrario -1.
+
+```
+
+**Es pertinente remarcar que el perceptrón no se limita a la clasificación binaria, para más consulte la técnica One-Versus-All (Ova)**
+
+### 																				Ejemplo: Data iris
+
+Para simplificación gráfica y demás, se usaŕa una clasificación binaria como ejemplo. SEeconsidera iris con sólo dos categorías (Versicolor y Setosa). La representación gráfica seŕa:
+
+```python
+"------------ Construyendo los datos------------------"
+
+Iris = pd.read_csv('https://archive.ics.uci.edu/ml/'
+    'machine-learning-databases/iris/iris.data', header=None) # Iimportando data desde la web
+
+"Note que se utilizará el criterio de validación cruzada para eliminar el sobreajuste de los datos (100 de entrenamiento y 50 de validación)"
+# - Definir la variable categórica de respuesta
+
+Y=Iris.iloc[0:100,4]# Se extraen las 100 primeras filas y la cuarta columna. datapandas.iloc donde ilos es la función para extraer columnas y filas en formato pandas
+#- Clasificar la variable de respuesta
+
+Y=np.where(Y=="Iris-setosa",1,-1)
+
+
+# - Definir las covariables
+
+X=Iris.iloc[0:100,[0,2]].values # Se extraen las 100 primeras filas y las columnas lóngitud de sépalo [,0] y lóngitud del pétalo [,2]. El argumento .value devuelve la salida en formato listas de python.
+    # la librería de gráficas maplotib no grafica data tipo pandas
+
+
+"------------ Representación gráfica------------------"
+
+plt.scatter(X[:50,0], X[:50,1],color="blue",label="Versicolor",marker="o")#plt.show muestra las gráficas (esto por ser usuario de arch)
+plt.scatter(X[50:100,0], X[50:100,1],color="red",label="Virginica",marker="x");plt.ylabel("Lóngitud del pétalo");plt.xlabel("Lóngitud del Sépalo")
+plt.legend(loc="upper left");plt.show()
+```
+
+![](/home/juan-c/snap/marktext/9/.config/marktext/images/2022-12-08-20-16-25-image.png)
+
+Note que el problema se puede solucionar claramente por un separador lineal (persetrón básico de rosenblatt)
+
+### 																	Implementando el percetrón a Iris
+
+Ahora, implementando el perceptrón al problema de clasificación anterior tenemos:
+
+```python
+"------------ Perceptrón en Iris------------------"
+
+Perceptron_apli=Perceptron(0.1,10,1) # Se definen los hiper parámetros y al objeto se le llama Percentrón_apli
+Perceptron_apli.fit(X, Y) # Se seleciona la clase fit del percentrón_apli y se definene los valores de entrada
+
+# Gŕafica de los errores
+plt.plot(range(1,len(Perceptron_apli.errors_) + 1) ,Perceptron_apli.errors_,marker="o");plt.xlabel("Cantidad de iteraciones");plt.ylabel("Errores en cada iteración")
+plt.show()
+```
+
+Graficando el número de iteraciones (10, indicadas en los hiperpaŕametros) vs el error debido a la estimación final cuantificado en cada iteración, se tiene:
+
+![image-20221212151243119](/home/juan-c/.config/Typora/typora-user-images/image-20221212151243119.png)
+
+Como se observa, la gráfica resulta pertinente para concluir la cantidad de iteraciones óptimas. En un problema real, iterar demás es ineficaz, e iterar de menos no es óptimo. En este caso, el algoritmo tiene predicciones optimas con 6 iteraciones. 
+
+#### TENGA CUIDADO CON IMPLEMENTAR EL PERCEPTRÓN BÁSICO DE ROSENBLATT
+
+**El perceptrón básico de rosenblatt clasifica a la perfección sólo si las dos clases pueden ser separadas perfectamente por un hiperplano lineal, en caso contrario, los pesos nunca dejarán de actualizarse.**
+
+
+
+![image-20221212152646482](/home/juan-c/.config/Typora/typora-user-images/image-20221212152646482.png)
+
+## Neuronas lineales adaptativas (Adaline)
+
+Publicada por Bernard Widrow y su alumno Ted Hoff a unos pocos años del perceptrón de Rosenblatt, esta presenta una mejora a la unidad neuronal; pues permite clasificar datos que no necesariamente pueden ser separadas por un hiperplano lineal. Recuerde que el perceptrón básico estimaba sus pesos con base en la función escalón unitario, Adaline actualiza sus pesos con base en una función de activación lineal. En pocas palabras, la función de activación en el perceptrón era:
+$$
+\phi(Z)=\begin{Bmatrix}1 ; z\geq 0 \\ -1; otro\end{Bmatrix}
+$$
+Ahora, en Adaline la función de activación viene a ser la misma entrada (note que $Z$ de por sí ya es una combinación o función lineal), es decir:
+$$
+\phi(Z)=W^tX
+$$
+La diferencia se puede ver de forma más intuitiva con la siguiente imagen:
+
+![image-20221216204059391](/home/juan-c/.config/Typora/typora-user-images/image-20221216204059391.png)
+
+En resumen, mientras que el perceptrón para aprender/actualizar los pesos utiliza las clases verdaderas y las predichas **ya clasificadas**, Adaline compara las clases verdaderas con las **salidas continuas (de la activación lineal) sin clasificar**.
+
+### Aprendizaje de Adaline
+
+Como se busca mayor precisión en la predicción, Adaline utiliza las salidas de la suma ponderada, de esta forma puede compararlas con la etiqueta de clase de forma más precisa. Todos los modelos estadísticos requieren cuantificar el error de sus predicciones, de esta forma se estiman los parámetros. Para los modelos de regresión lineal clásicos, dicha función de error (o costo) viene a ser el **Error cuadrático medio (La lógica de esta es similar a la varianza, pues la función da el promedio de las desviaciones entre la etiqueta y su predicción)**. La función de SSE (o ECM) es:
+$$
+E(w)=\frac{1}{n} \sum_{i=1}^n(\phi(Z_i)-Y_i)^2
+$$
+Una ventada de la función ECM es que es convexa (Sólo un max y un min) y por lo tanto, diferenciable. Dado lo anterior es posible actualizar los pesos de tal forma que el ECM sea mínimo (Con el criterio de las derivadas o el descenso del gradiente). **Note que $\hat{Y_i}=\phi(Z_i)=W^tX$, y lo que se quiere es encontrar la combinación del vector de los pesos $W$ que  minimicen la función Error (ECM). **  El problema anterior se resuelve fácilmente con la derivada parcial de la función de costo $ECM$ respecto a $W$, es decir, encontrando el vector gradiente (dado que $W$ es un vector, se recurre a la derivada multivariable o su vector representativo, el gradiente); **empero, dado que para futuros modelos con función de activación no lineal y donde la función de Error puede ser no convexa se usa el algoritmo del descenso del gradiente, y este conviene introducirlo de una vez.* 
+
+### Descenso de gradiente
+
+Algoritmo aplicable para funciones de costo convexas y no convexas (con varios mínimos relativos). La lógica es la siguiente: 
+
+![image-20221216213709500](/home/juan-c/.config/Typora/typora-user-images/image-20221216213709500.png)
+
+Busca alcanzar el mínimo de la función dando "pasos" en la función ECM con base en el gradiente, esto utilizando valores de $W$ aleatorios y pequeños para posteriormente, actualizarlos con la derivada. Entonces.
+$$
+\Delta w_j=-\eta \nabla E (w)
+$$
+Donde $\nabla E$ indica el vector gradiente, es decir, el vector de  las derivadas parciales de la función $E$ en cada peso a $w_j$:
+$$
+\frac{\partial E}{\partial w_j}=-\sum_{i=1}^n(\phi(Z_i)-Y_i)x_{ji}
+$$
+Note que en $(14)$ el vector gradiente se multiplica por la tasa de aprendizaje $\eta$ y $-1$; se multiplica por el negativo dado que, por definición, el vector gradiente tiene dirección creciente, pero como queremos encontrar el mínimo, debemos cambiar de sentido la dirección del vector $\nabla E(w)$. Con base en $(14)$ y $(15)$ se puede escribir la actualización de los pesos de la siguiente forma:
+$$
+\Delta w_j=-\eta \frac{\partial E}{\partial w_j}=\eta \sum_{i=1}^n(\phi(Z_i)-Y_i)x_{ji}
+$$
+Donde, la regla de aprendizaje será análoga al perceptrón básico, es decir (matricialmente): 
+$$
+W:=W+\Delta W
+$$
+**Note que a diferencia de la regla de aprendizaje de Hebb, Adaline aprende en conjunto con todas las filas (observaciones) de la matriz $X$, no de manera grdu como el preceptrón (recuerde que este utilizaba fila por fila y se seleccionaba la última como estimación).**
+
+
+
+
+
+
+

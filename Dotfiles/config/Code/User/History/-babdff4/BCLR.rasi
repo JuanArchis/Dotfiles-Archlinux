@@ -1,0 +1,161 @@
+configuration {
+    font: "Inter Regular 10";
+    sidebar-mode: true;
+    show-icons: true;
+    icon-theme: "Nordzy";
+    fullscreen: false;
+    threads: 0;
+    matching: "fuzzy";
+    scroll-method: 0;
+}
+
+* {
+    transparent: #00000000;
+    foreground: #d8dee9;
+    background-selected: #121C21;
+    background-active: #121C21;
+    background-white: #121C21;
+    background-black: #00000000;
+    urgent: #2d3c43;
+    urgent-selected: #2d3c43;
+}
+
+window {
+    transparency: "real";
+    background-color: #121C21;
+    text-color: #6e6a86;
+    location: west;
+    anchor: west;
+    x-offset: 205px;
+    y-offset: 50px;
+    height:30%;
+    width: 350px;
+    orientation: vertical;
+}
+
+prompt {
+    enabled: false;
+}
+
+button {
+    action: "ok";
+    str: " ";
+    font: "FantasqueSansMono Nerd Font 16";
+    expand: false;
+    text-color: #d8dee9;
+    background-color: #2d3c43;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+entry {
+    font: "Inter Regular 12";
+    background-color: #2d3c43;
+    text-color: #d8dee9;
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+    placeholder: "Global Search";
+    placeholder-color: @foreground;
+    blink: true;
+}
+
+entry-wrapper {
+    orientation: horizontal;
+    margin: 0 12px 0 12px;
+    spacing: 24px;
+    vertical-align: 0.5;
+    background-color: #2d3c43;
+    children: [ button, entry ];
+}
+
+inputbar {
+    padding: 14px;
+    margin: 10px 10px 14px 10px;
+    background-color: #2d3c43;
+    text-color: @foreground;
+    expand: false;
+    border-radius: 9px;
+    position: north;
+    children: [ entry-wrapper ];
+}
+
+listview {
+    background-color: @transparent;
+    spacing: 0;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+}
+
+mainbox {
+    width: 200px;
+    expand: true;
+    spacing: 12px;
+    padding: 5px;
+    background-color: @background-black;
+    children: [ inputbar, listview ];
+}
+
+scrollbar {
+    background-color: @background-white;
+    handle-width: 0;
+    margin: 0 0 5px 0;
+    border-radius: 9px;
+}
+
+element {
+    background-color: #121C21;
+    text-color: @foreground;
+    orientation: horizontal;
+    border: 0;
+    border-color: @background-white;
+    border-radius: 6px;
+    spacing: 24px;
+    margin: 0px 12px 0px 12px;
+    padding: 10px 24px 10px 24px;
+}
+
+element-icon {
+    size: 24px;
+    border: 0;
+    border-color: @transparent;
+    background-color: transparent;
+}
+
+element-text {
+    font: "Inter Regular 11";
+    expand: true;
+    horizontal-align: 0;
+    vertical-align: 0.5;
+    color: #d8dee9;
+    background-color: transparent;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color: @urgent;
+    text-color: @foreground;
+    border-radius: 9px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color: @background-active;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: #2d3c43;
+    text-color: @foreground;
+}
+
+element selected.urgent {
+    background-color: #2d3c43;
+    text-color: @foreground;
+}
+
+element selected.active {
+    background-color: #2d3c43;
+    color: @foreground-selected;
+}

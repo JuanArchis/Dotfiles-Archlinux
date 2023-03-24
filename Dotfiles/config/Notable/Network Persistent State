@@ -1,0 +1,1 @@
+{"net":{"http_server_properties":{"servers":[{"isolation":[],"server":"https://ip.notable.md","supports_spdy":true},{"isolation":[],"server":"https://ip.notable.app","supports_spdy":true},{"isolation":[],"server":"https://api.amplitude.com","supports_spdy":true}],"version":5},"network_qualities":{"CAISA09yZBiAgICA+P////8B":"3G"}}}

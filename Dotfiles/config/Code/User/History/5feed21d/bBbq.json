@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[r]": {},
+    "r.alwaysUseActiveTerminal": true
+}

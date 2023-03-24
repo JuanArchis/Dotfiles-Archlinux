@@ -1,0 +1,75 @@
+2023-03-20 09:43:03.753 [info] Nivel de registro: Info
+2023-03-20 09:43:03.753 [info] La validación encontró GIT en: “git“
+2023-03-20 09:43:03.753 [info] Usando GIT “2.40.0” desde “git”
+2023-03-20 09:43:03.753 [info] > git rev-parse --show-toplevel [15ms]
+2023-03-20 09:43:03.753 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:03.759 [info] > git rev-parse --show-toplevel [53ms]
+2023-03-20 09:43:03.759 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:03.825 [info] > git rev-parse --show-toplevel [43ms]
+2023-03-20 09:43:03.825 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:04.311 [info] > git rev-parse --show-toplevel [463ms]
+2023-03-20 09:43:04.312 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:04.398 [info] > git rev-parse --show-toplevel [62ms]
+2023-03-20 09:43:04.398 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:04.432 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:43:04.432 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:43:04.482 [info] > git rev-parse --show-toplevel [5ms]
+2023-03-20 09:43:04.482 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:44:05.157 [info] > git rev-parse --show-toplevel [5ms]
+2023-03-20 09:44:05.157 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:44:06.154 [info] > git rev-parse --show-toplevel [4ms]
+2023-03-20 09:44:06.154 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:44:18.263 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:44:18.263 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:47:48.802 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:47:48.802 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:51:08.978 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:51:08.978 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:51:30.381 [info] > git rev-parse --show-toplevel [7ms]
+2023-03-20 09:51:30.381 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:51:31.003 [info] > git rev-parse --show-toplevel [6ms]
+2023-03-20 09:51:31.003 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-03-20 09:51:46.698 [info] > git rev-parse --show-toplevel [2ms]
+2023-03-20 09:51:46.698 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:46.474 [info] > git rev-parse --show-toplevel [526ms]
+2023-03-20 09:54:46.488 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:46.498 [info] > git rev-parse --show-toplevel [1ms]
+2023-03-20 09:54:46.498 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:50.459 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:54:50.459 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:51.117 [info] > git rev-parse --show-toplevel [6ms]
+2023-03-20 09:54:51.117 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:51.143 [info] > git rev-parse --show-toplevel [5ms]
+2023-03-20 09:54:51.143 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:52.233 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:54:52.234 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:54.209 [info] > git rev-parse --show-toplevel [4ms]
+2023-03-20 09:54:54.209 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:54.226 [info] > git rev-parse --show-toplevel [2ms]
+2023-03-20 09:54:54.226 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:54:57.668 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:54:57.668 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:55:01.081 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:55:01.081 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:55:01.097 [info] > git rev-parse --show-toplevel [4ms]
+2023-03-20 09:55:01.097 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 09:55:06.662 [info] > git rev-parse --show-toplevel [3ms]
+2023-03-20 09:55:06.662 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-03-20 10:05:40.308 [info] > git rev-parse --show-toplevel [1ms]
+2023-03-20 10:05:40.308 [info] fatal: not a git repository (or any parent up to mount point /run/media/juan-c)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

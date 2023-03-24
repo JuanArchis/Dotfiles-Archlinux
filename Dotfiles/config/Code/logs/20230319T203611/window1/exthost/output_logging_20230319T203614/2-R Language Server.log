@@ -1,0 +1,766 @@
+R Language Server (362897) started
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+
+[2023-03-19 20:36:19.081] connection type: tcp at  33993
+
+[2023-03-19 20:36:19.087] connected
+
+[2023-03-19 20:36:19.501] received:  Content-Length: 5828
+
+[2023-03-19 20:36:19.716] received payload.
+
+[2023-03-19 20:36:19.718] handling request:  initialize
+
+[2023-03-19 20:36:19.719] session:  {
+  "system": {
+    "sysname": "Linux",
+    "release": "6.2.6-arch1-1",
+    "version": "#1 S
+MP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000",
+    "nodename": "Arcris",
+    "machine": "x86_64",
+    "login": "juan-c",
+ 
+   "user": "juan-c",
+    "effective_user": "juan-c"
+  },
+  "pid": 362897,
+  "wd": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+ 
+ "args": ["/usr/lib64/R/bin/exec/R", "--silent", "--slave", "--no-save", "--no-restore", "-e", "base::source(base::commandArgs(T
+RUE))", "--args", "/home/juan-c/.vscode/extensions/reditorsupport.r-2.7.2/R/languageServer.R"],
+  "ver": {
+    "platform": "x86_
+64-pc-linux-gnu",
+    "arch": "x86_64",
+    "os": "linux-gnu",
+    "system": "x86_64, linux-gnu",
+    "status": "",
+    "major":
+ "4",
+    "minor": "2.3",
+    "year": "2023",
+    "month": "03",
+    "day": "15",
+    "svn rev": "83980",
+    "language": "R",
+ 
+   "version.string": "R version 4.2.3 (2023-03-15)",
+    "nickname": "Shortstop Beagle"
+  },
+  "locale": "C",
+  "env": {
+    "CH
+ROME_DESKTOP": "code-url-handler.desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "DEBUGINFOD_URLS"
+: "https://debuginfod.archlinux.org ",
+    "DESKTOP_SESSION": "hyprland",
+    "DISPLAY": ":1",
+    "DOTNET_BUNDLE_EXTRACT_BASE_D
+IR": "/home/juan-c/.cache/dotnet_bundle_extract",
+    "DOTNET_ROOT": "/usr/share/dotnet",
+    "EDITOR": "vi",
+    "ELECTRON_NO_A
+TTACH_CONSOLE": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "GDK_BACKEND": "x11",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/app
+lications/code.desktop",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "362446",
+    "HOME": "/home/juan-c",
+    "HYPRLAND_CMD": "Hyprlan
+d",
+    "HYPRLAND_INSTANCE_SIGNATURE": "06244555915339967864292dd0b83cd9732516d8_1679275581",
+    "LANG": "UTF-8",
+    "LD_LIBRA
+RY_PATH": "/usr/lib64/R/lib:/usr/lib/jvm/java-19-openjdk/lib/server",
+    "LN_S": "ln -s",
+    "LOGNAME": "juan-c",
+    "MAIL": 
+"/var/spool/mail/juan-c",
+    "MAKE": "make",
+    "MOTD_SHOWN": "pam",
+    "MOZ_ENABLE_WAYLAND": "1",
+    "NO_AT_BRIDGE": "1",
+ 
+   "OLDPWD": "/home/juan-c",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Hyprland",
+    "PAGER": "/usr/bin/less",
+    "PATH": "/usr/loc
+al/sbin:/usr/local/bin:/usr/bin:/home/juan-c/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr
+/bin/core_perl:/var/lib/snapd/snap/bin",
+    "PWD": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+    "R_ARCH": "",
+    "R_BROWSE
+R": "",
+    "R_BZIPCMD": "/usr/bin/bzip2",
+    "R_DOC_DIR": "/usr/share/doc/R/",
+    "R_GZIPCMD": "/usr/bin/gzip",
+    "R_HOME":
+ "/usr/lib64/R",
+    "R_INCLUDE_DIR": "/usr/include/R/",
+    "R_LIBS_SITE": "/usr/lib64/R/site-library",
+    "R_LIBS_USER": "/ho
+me/juan-c/R/x86_64-pc-linux-gnu-library/4.2",
+    "R_PAPERSIZE": "A4",
+    "R_PDFVIEWER": "",
+    "R_PLATFORM": "x86_64-pc-linux
+-gnu",
+    "R_PRINTCMD": "",
+    "R_RD4PDF": "times,hyper",
+    "R_SESSION_TMPDIR": "/tmp/Rtmp68FKrO",
+    "R_SHARE_DIR": "/usr/
+share/R/",
+    "R_STRIP_SHARED_LIB": "strip --strip-unneeded",
+    "R_STRIP_STATIC_LIB": "strip --strip-debug",
+    "R_SYSTEM_AB
+I": "linux,gcc,gxx,gfortran,gfortran",
+    "R_TEXI2DVICMD": "/usr/bin/texi2dvi",
+    "R_UNZIPCMD": "/usr/bin/unzip",
+    "R_ZIPC
+MD": "/usr/bin/zip",
+    "SED": "/usr/bin/sed",
+    "SHELL": "/bin/zsh",
+    "SHLVL": "1",
+    "TAR": "/usr/bin/tar",
+    "USER"
+: "juan-c",
+    "VSCODE_AMD_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_CLI": "1",
+    "VSCODE_CODE_C
+ACHE_PATH": "/home/juan-c/.config/Code/CachedData/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884",
+    "VSCODE_CRASH_REPORTER_PROCESS_
+TYPE": "extensionHost",
+    "VSCODE_CWD": "/home/juan-c",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "
+/run/user/1000/vscode-1da64c1e-1.76-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"es-co\",\"availableLanguages\":{\"*\":\"
+es\"},\"_languagePackId\":\"ac912362dff4707224d25c1495fac2dc.es\",\"_translationsConfigFile\":\"/home/juan-c/.config/Code/clp/ac
+912362dff4707224d25c1495fac2dc.es/tcf.json\",\"_cacheRoot\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es\
+",\"_corruptedFile\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es/corrupted.info\",\"_resolvedLanguagePac
+kCoreLocation\":\"/home/juan-c/.config/Code/clp/ac912362dff4707224d25c1495fac2dc.es/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884\",\
+"_languagePackSupport\":true}",
+    "VSCODE_PID": "362477",
+    "VSCR_LIB_PATHS": "",
+    "VSCR_LSP_DEBUG": "TRUE",
+    "VSCR_LS
+P_PORT": "33993",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "XCURSOR_SIZE": "24",
+    "XDG_BACKEND": "wayland",
+    "XDG_CURRENT_D
+ESKTOP": "Hyprland",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "XDG_RUNTIME_DIR": "/run/use
+r/1000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_CLASS": "user",
+
+    "XDG_SESSION_ID": "27",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session26",
+    "XDG_SESSION_TYPE": "wayla
+nd",
+    "XDG_VTNR": "2",
+    "_JAVA_AWT_WM_NONREPARENTING": "1"
+  },
+  "libpaths": ["/home/juan-c/R/x86_64-pc-linux-gnu-library
+/4.2", "/usr/lib/R/library"],
+  "namespaces": {
+    "processx": "3.8.0",
+    "compiler": "4.2.3",
+    "R6": "2.5.1",
+    "graphi
+cs": "4.2.3",
+    "tools": "4.2.3",
+    "parallel": "4.2.3",
+    "collections": "0.3.7",
+    "utils": "4.2.3",
+    "grDevices": 
+"4.2.3",
+    "stats": "4.2.3",
+    "datasets": "4.2.3",
+    "xml2": "1.3.3",
+    "stringi": "1.7.12",
+    "callr": "3.7.3",
+    
+"methods": "4.2.3",
+    "jsonlite": "1.8.4",
+    "ps": "1.7.2",
+    "base": "4.2.3",
+    "languageserver": "0.3.15"
+  },
+  "sear
+ch": [".GlobalEnv", "package:stats", "package:graphics", "package:grDevices", "package:utils", "package:datasets", "package:meth
+ods", "Autoloads", "package:base"]
+}
+
+[2023-03-19 20:36:19.784] initialization config:  {
+  "processId": 362670,
+  "clientInfo": {
+    "name": "Visual Studio Code",
+ 
+   "version": "1.76.2"
+  },
+  "locale": "es",
+  "rootPath": "/home/juan-c/WIM-PC-2022/Otro/Visual Code",
+  "rootUri": "file:///h
+ome/juan-c/WIM-PC-2022/Otro/Visual%20Code",
+  "capabilities": {
+    "workspace": {
+      "applyEdit": true,
+      "workspaceEdit
+": {
+        "documentChanges": true,
+        "resourceOperations": [
+          "create",
+          "rename",
+          "delete"
+
+        ],
+        "failureHandling": "textOnlyTransactional",
+        "normalizesLineEndings": true,
+        "changeAnnotation
+Support": {
+          "groupsOnLabel": true
+        }
+      },
+      "configuration": true,
+      "didChangeWatchedFiles": {
+   
+     "dynamicRegistration": true,
+        "relativePatternSupport": true
+      },
+      "symbol": {
+        "dynamicRegistration
+": true,
+        "symbolKind": {
+          "valueSet": [
+            1,
+            2,
+            3,
+            4,
+           
+ 5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        },
+        "tagSupport": {
+  
+        "valueSet": [
+            1
+          ]
+        },
+        "resolveSupport": {
+          "properties": [
+            "lo
+cation.range"
+          ]
+        }
+      },
+      "codeLens": {
+        "refreshSupport": true
+      },
+      "executeCommand":
+ {
+        "dynamicRegistration": true
+      },
+      "didChangeConfiguration": {
+        "dynamicRegistration": true
+      },
+ 
+     "semanticTokens": {
+        "refreshSupport": true
+      },
+      "fileOperations": {
+        "dynamicRegistration": true,
+
+        "didCreate": true,
+        "didRename": true,
+        "didDelete": true,
+        "willCreate": true,
+        "willRename
+": true,
+        "willDelete": true
+      },
+      "inlineValue": {
+        "refreshSupport": true
+      },
+      "inlayHint": {
+
+        "refreshSupport": true
+      },
+      "diagnostics": {
+        "refreshSupport": true
+      }
+    },
+    "textDocument"
+: {
+      "publishDiagnostics": {
+        "relatedInformation": true,
+        "versionSupport": false,
+        "tagSupport": {
+ 
+         "valueSet": [
+            1,
+            2
+          ]
+        },
+        "codeDescriptionSupport": true,
+        "data
+Support": true
+      },
+      "synchronization": {
+        "dynamicRegistration": true,
+        "willSave": true,
+        "willS
+aveWaitUntil": true,
+        "didSave": true
+      },
+      "completion": {
+        "dynamicRegistration": true,
+        "contex
+tSupport": true,
+        "completionItem": {
+          "snippetSupport": true,
+          "commitCharactersSupport": true,
+      
+    "documentationFormat": [
+            "markdown",
+            "plaintext"
+          ],
+          "deprecatedSupport": true,
+ 
+         "preselectSupport": true,
+          "tagSupport": {
+            "valueSet": [
+              1
+            ]
+          }
+,
+          "insertReplaceSupport": true,
+          "resolveSupport": {
+            "properties": [
+              "documentation
+",
+              "detail",
+              "additionalTextEdits"
+            ]
+          },
+          "insertTextModeSupport": {
+ 
+           "valueSet": [
+              1,
+              2
+            ]
+          },
+          "labelDetailsSupport": true
+     
+   },
+        "insertTextMode": 2,
+        "completionItemKind": {
+          "valueSet": [
+            1,
+            2,
+       
+     3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        },
+        
+"completionList": {
+          "itemDefaults": [
+            "commitCharacters",
+            "editRange",
+            "insertText
+Format",
+            "insertTextMode"
+          ]
+        }
+      },
+      "hover": {
+        "dynamicRegistration": true,
+     
+   "contentFormat": [
+          "markdown",
+          "plaintext"
+        ]
+      },
+      "signatureHelp": {
+        "dynamicRe
+gistration": true,
+        "signatureInformation": {
+          "documentationFormat": [
+            "markdown",
+            "pla
+intext"
+          ],
+          "parameterInformation": {
+            "labelOffsetSupport": true
+          },
+          "activePa
+rameterSupport": true
+        },
+        "contextSupport": true
+      },
+      "definition": {
+        "dynamicRegistration": tr
+ue,
+        "linkSupport": true
+      },
+      "references": {
+        "dynamicRegistration": true
+      },
+      "documentHighl
+ight": {
+        "dynamicRegistration": true
+      },
+      "documentSymbol": {
+        "dynamicRegistration": true,
+        "sy
+mbolKind": {
+          "valueSet": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+ 
+           7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+    
+        15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+    
+        23,
+            24,
+            25,
+            26
+          ]
+        },
+        "hierarchicalDocumentSymbolSupport": t
+rue,
+        "tagSupport": {
+          "valueSet": [
+            1
+          ]
+        },
+        "labelSupport": true
+      },
+
+      "codeAction": {
+        "dynamicRegistration": true,
+        "isPreferredSupport": true,
+        "disabledSupport": true,
+
+        "dataSupport": true,
+        "resolveSupport": {
+          "properties": [
+            "edit"
+          ]
+        },
+   
+     "codeActionLiteralSupport": {
+          "codeActionKind": {
+            "valueSet": [
+              "",
+              "quic
+kfix",
+              "refactor",
+              "refactor.extract",
+              "refactor.inline",
+              "refactor.rewr
+ite",
+              "source",
+              "source.organizeImports"
+            ]
+          }
+        },
+        "honorsChangeA
+nnotations": false
+      },
+      "codeLens": {
+        "dynamicRegistration": true
+      },
+      "formatting": {
+        "dyna
+micRegistration": true
+      },
+      "rangeFormatting": {
+        "dynamicRegistration": true
+      },
+      "onTypeFormatting"
+: {
+        "dynamicRegistration": true
+      },
+      "rename": {
+        "dynamicRegistration": true,
+        "prepareSupport"
+: true,
+        "prepareSupportDefaultBehavior": 1,
+        "honorsChangeAnnotations": true
+      },
+      "documentLink": {
+   
+     "dynamicRegistration": true,
+        "tooltipSupport": true
+      },
+      "typeDefinition": {
+        "dynamicRegistration
+": true,
+        "linkSupport": true
+      },
+      "implementation": {
+        "dynamicRegistration": true,
+        "linkSuppor
+t": true
+      },
+      "colorProvider": {
+        "dynamicRegistration": true
+      },
+      "foldingRange": {
+        "dynamic
+Registration": true,
+        "rangeLimit": 5000,
+        "lineFoldingOnly": true,
+        "foldingRangeKind": {
+          "value
+Set": [
+            "comment",
+            "imports",
+            "region"
+          ]
+        },
+        "foldingRange": {
+    
+      "collapsedText": false
+        }
+      },
+      "declaration": {
+        "dynamicRegistration": true,
+        "linkSupport
+": true
+      },
+      "selectionRange": {
+        "dynamicRegistration": true
+      },
+      "callHierarchy": {
+        "dynami
+cRegistration": true
+      },
+      "semanticTokens": {
+        "dynamicRegistration": true,
+        "tokenTypes": [
+          "
+namespace",
+          "type",
+          "class",
+          "enum",
+          "interface",
+          "struct",
+          "typePar
+ameter",
+          "parameter",
+          "variable",
+          "property",
+          "enumMember",
+          "event",
+         
+ "function",
+          "method",
+          "macro",
+          "keyword",
+          "modifier",
+          "comment",
+          "s
+tring",
+          "number",
+          "regexp",
+          "operator",
+          "decorator"
+        ],
+        "tokenModifiers":
+ [
+          "declaration",
+          "definition",
+          "readonly",
+          "static",
+          "deprecated",
+          
+"abstract",
+          "async",
+          "modification",
+          "documentation",
+          "defaultLibrary"
+        ],
+      
+  "formats": [
+          "relative"
+        ],
+        "requests": {
+          "range": true,
+          "full": {
+            "d
+elta": true
+          }
+        },
+        "multilineTokenSupport": false,
+        "overlappingTokenSupport": false,
+        "se
+rverCancelSupport": true,
+        "augmentsSyntaxTokens": true
+      },
+      "linkedEditingRange": {
+        "dynamicRegistrati
+on": true
+      },
+      "typeHierarchy": {
+        "dynamicRegistration": true
+      },
+      "inlineValue": {
+        "dynamic
+Registration": true
+      },
+      "inlayHint": {
+        "dynamicRegistration": true,
+        "resolveSupport": {
+          "pr
+operties": [
+            "tooltip",
+            "textEdits",
+            "label.tooltip",
+            "label.location",
+        
+    "label.command"
+          ]
+        }
+      },
+      "diagnostic": {
+        "dynamicRegistration": true,
+        "relatedDo
+cumentSupport": false
+      }
+    },
+    "window": {
+      "showMessage": {
+        "messageActionItem": {
+          "additional
+PropertiesSupport": true
+        }
+      },
+      "showDocument": {
+        "support": true
+      },
+      "workDoneProgress": t
+rue
+    },
+    "general": {
+      "staleRequestSupport": {
+        "cancel": true,
+        "retryOnContentModified": [
+         
+ "textDocument/semanticTokens/full",
+          "textDocument/semanticTokens/range",
+          "textDocument/semanticTokens/full/
+delta"
+        ]
+      },
+      "regularExpressions": {
+        "engine": "ECMAScript",
+        "version": "ES2020"
+      },
+   
+   "markdown": {
+        "parser": "marked",
+        "version": "1.1.0"
+      },
+      "positionEncodings": [
+        "utf-16"
+ 
+     ]
+    },
+    "notebookDocument": {
+      "synchronization": {
+        "dynamicRegistration": true,
+        "executionSummar
+ySupport": true
+      }
+    }
+  },
+  "trace": "off",
+  "workspaceFolders": [
+    {
+      "uri": "file:///home/juan-c/WIM-PC-2022
+/Otro/Visual%20Code",
+      "name": "Visual Code"
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+R Language Server (378556) started
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+
+[2023-03-19 20:50:02.342] connection type: tcp at  44845
+
+[2023-03-19 20:50:02.350] connected
+

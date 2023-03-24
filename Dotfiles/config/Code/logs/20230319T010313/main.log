@@ -1,0 +1,14 @@
+2023-03-19 01:03:13.494 [info] update#setState idle
+2023-03-19 01:03:14.867 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-03-19 01:03:14.882 [info] [UtilityProcess id: 1, type: extensionHost, pid: 21676]: successfully created
+2023-03-19 01:03:26.198 [error] update#isLatestVersion(): failed to check for updates
+2023-03-19 01:03:26.200 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:105:7047)
+    at SimpleURLLoaderWrapper.emit (node:events:526:28)
+2023-03-19 01:03:43.497 [info] update#setState checking for updates
+2023-03-19 01:03:53.510 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:105:7047)
+    at SimpleURLLoaderWrapper.emit (node:events:526:28)
+2023-03-19 01:03:53.511 [info] update#setState idle
+2023-03-19 01:14:25.422 [info] [UtilityProcess id: 1, type: extensionHost, pid: 21676]: received exit event with code 0
+2023-03-19 01:14:25.423 [info] Extension host with pid 21676 exited with code: 0, signal: unknown.

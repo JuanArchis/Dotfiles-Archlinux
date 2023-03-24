@@ -1,0 +1,38 @@
+#Lectura base de datos y librerias
+
+library("readxl");library("dplyr");library("MASS");library("FactoMineR");library("factoextra");library("visdat");library("DMwR2") 
+library("mice")
+Datos_percepción = read_excel("C:/Users/kmili/Downloads/Percepción decodificada.xlsx") 
+
+#Conviertiendo en factor
+Datos_percepción = Datos_percepción %>% mutate_if(is.character,as.factor);Datos_percepción$Estrato=as.factor(Datos_percepción$Estrato)
+
+
+
+# AFM
+AFM_Datos_percepción=MFA(Datos_percepción, group=c(2,6,2,4,3,3,7),name.group=c("Socio demográficas","Ubicación y transporte","Sitios sostenibles","Eficiencia de Agua","Energía y atmósfera", "Materiales y recursos","Calidad del Ambiente Interior"),
+graph =FALSE,type=c(rep("n",7)),num.group.sup=(1,2))
+
+table(Datos_percepción[14])
+#num.group.sup=1
+
+#Gáfico por grupos
+windows();fviz_mfa_var(AFM_Datos_percepción, "group")
+
+# Variables
+windows();fviz_famd_var(AFM_Datos_percepción, "quali.var", col.var = "contrib",  gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+col.var.sup = "violet",shape.var = 17,alpha.var = 0.5)
+
+AFM_Datos_percepción$quali.var$cos2
+
+#===========Clustering
+
+
+Clust_Datos_Percepción= HCPC(AFM_Datos_percepción, graph = FALSE,max=3)
+
+# Individuals facor map
+windows();fviz_cluster(Clust_Datos_Percepción, geom = "point", main = "Factor map")
+Clust_Datos_Percepción$desc.var
+
+Datos=iris
+Datos$Sepal.Length

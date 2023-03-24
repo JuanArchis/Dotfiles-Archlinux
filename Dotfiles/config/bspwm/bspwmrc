@@ -1,0 +1,94 @@
+#!/bin/sh
+# ~/.config/bspwm/bspwmrc
+# ----------------------------------------#
+#   Configuraciones de inicio BSPWM       #
+#-----------------------------------------#
+picom &
+
+bspc rule -a Lutris:lutris desktop=^5
+# ---- Pavucontrol
+bspc rule -a Pavucontrol:pavucontrol desktop=^6
+
+# ---- James jamesdsp
+bspc rule -a jamesdsp desktop=^6
+
+# ----------- Polybar - theme
+bash ~/.config/polybar/launch.sh --colorblocks
+# ----------- Configuraciones de pantalla
+pgrep -x sxhkd > /dev/null || sxhkd &
+xrandr --output DVI-D-0 --primary --mode 1920x1080 --rotate normal --output HDMI-A-2 --mode 1366x768 --rotate normal --right-of DVI-D-0
+
+# ----------- Configuraciones de escritorios de trabajo
+bspc monitor DVI-D-0 -d I II III IV V VI
+bspc monitor HDMI-A-2 -d VII VIII IX XX                
+
+# ----------- Otras
+bspc config border_width         2
+bspc config window_gap          12
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc config focus_follows_pointer true
+
+# ----------- Configuraciones de cursor y picom
+picom --experimental-backends &
+xsetroot -cursor_name left_ptr &
+# -----------------------------------------#
+#        Fondo de pantalla y tema          #
+#------------------------------------------#
+
+# ----------- Fondo de pantalla
+feh --bg-fill $HOME/Imágenes/3.png
+# ---------- Lineas de contorno
+bspc config focused_border_color \#bf616a
+bspc config normal_border_color \#88c0d0
+bspc config active_border_color \#88c0d0
+# ------------------------------------------------------------#
+#                       Reglas                                #
+#-------------------------------------------------------------#
+# -- Spotify
+bspc config external_rules_command "/home/juan-c/.config/bspwm/spotify.sh"
+#spotify &
+
+bspc rule -a Alacritty state=floating 
+bspc rule -a Zathura state=tiled desktop=^3
+bspc rule -a Nemo state=floating center=true rectangle=920x520+230+20
+5
+# Reglas externas por por alacritty
+
+# --cava
+bspc rule -a cava desktop=^2 state=floating rectangle=1220x240+380+800
+#alacritty --class 'cava' -e cava &
+
+#- ranger
+bspc rule -a ranger desktop=^1 follow=on state=floating rectangle=650x320+1250+400
+#alacritty --class 'ranger' -e ranger &
+
+#- tty-clock
+bspc rule -a tty-clock desktop=^1 follow=on state=floating rectangle=450x320+1450+50
+#alacritty --class 'tty-clock' -e tty-clock -C 1 -c -D &
+
+#- gif-viewer
+bspc rule -a pipes.sh desktop=^1 follow=on state=floating rectangle=170x320+1250+50
+#alacritty --class 'pipes.sh' -e pipes.sh &
+
+# -- firefox
+
+bspc rule -a firefox:Navigator desktop=^3 follow=off focus=off
+#firefox &
+# -- gotop-brlin
+bspc rule -a gotop desktop=^1 follow=on state=floating rectangle=770x340+1130+730
+#alacritty --class 'gotop' -e gotop
+
+# -- vs code 
+bspc rule -a code-oss state=tiled desktop=^4 focus=off
+
+# -- R studio
+
+#bspc rule -a RStudio:rstudio state=tiled desktop=^4
+
